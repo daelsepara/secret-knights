@@ -17,7 +17,7 @@
 
 <ROUTINE SPECIAL-INTERRUPT-ROUTINE (KEY)
 	<COND (<EQUAL? .KEY DATABANKS-KEY-CAPS DATABANKS-KEY> <DATA-BANK> <PRESS-A-KEY> <RTRUE>)>
-	<COND (<EQUAL? .KEY DATAFILES-KEY-CAPS DATAFILES-KEY> <DATA-FILE ,HERE> <PRESS-A-KEY> <RTRUE>)>
+	<COND (<EQUAL? .KEY DATAFILES-KEY-CAPS DATAFILES-KEY> <COND (<DATA-FILE ,HERE> <PRESS-A-KEY> <RTRUE>)(ELSE <RFALSE>)>)>
 	<RFALSE>>
 
 <ROUTINE RESET-OBJECTS ()
@@ -26,7 +26,7 @@
 <ROUTINE RESET-STORY ()
 	<RETURN>>
 
-<CONSTANT BLANK "This story has not been written yet.">
+<CONSTANT TEXT "This story has not been written yet.">
 
 <CONSTANT TEXT001 "You're standing on a dirt road lined with trees near Windsor, England. It's April 28, 1344. In the distance you can see a castle on a hill, with giant tents on the fields below.||You can hear the sound of galloping hooves coming up behind you.||You spin around. A big horse rears back on its hind legs. Its front hooves kick wildly in the air.||\"Easy, Bizan!\" says its rider. He's dressed like a knight!||The horse neighs and snorts with a surprise at your sudden appearance. You jump out of the way, but the panicked horse throws the knight into the weeds by the side of the road.||\"Oof!\" says the knight. His heavy armor makes a clanking sound as he falls flat on his back. On the road behind him, a boy leading a horse turns and runs away. The two horses trot off to graze in a field.||\"Squire!\" calls the knight in a weak voice. \"Squire Randall! Where is that boy?\"||You walk over to the knight. \"May I help you, sir?\" you say.">
 
@@ -44,145 +44,60 @@
 	(CONTINUE STORY015)
 	(FLAGS TAKEBIT)>
 
+<CONSTANT TEXT005 "You're in a deserted, narrow street in the city of Winchester. It's May 20, 1357.||You hear cheering in the distance, and the sound of trumpets.||You turn into the main square of the city, in front of a half-built cathedral. \"Hurrah for the prince!\" people shout. You're almost trampled by a wildly cheering crows.||It's a parade! Knights on horseback push slowly through the crows. Colorful banners fly everywhere. A string of flowers hits you on the head, and you look up. What look like giant birdcages hang from poles above a row of shops. Beautiful girls stand inside the cages, throwing flowers.||There's a man in short green coat standing next to you, and a boy in a thick leather apron. \"What's going on?\" you ask.||The man in green looks at you with a surprise.\"You mean you do not know? That's Prince Edward, the king's eldest son. He brings a prisoner from the war in France. Not just any prisoner -- it's John, the King of France himself.">
+
 <ROOM STORY005
 	(DESC "005")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT005)
+	(CONTINUE STORY007)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY006
-	(DESC "006")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT007 "A tall, blond man, about thirty years old waves to the crowd. That must be the prince, you decide. He wears a long tunic with some sort of cat design on it, and -- yes! Around his arm is a dark blue garter. Some of the knights with him wear the same thing. The garter you're looking for is dark blue. Of course! The Order of the Garter exists. Now, in 1357!||\"Why do they wear those garters on their sleeves?\" you ask the boy in the leather apron.||\"I'm damned if I know,\" he says. \"Seems foolish to me. I'm apprentice to a harness maker, so I see them often enough. But only certain knights wear them.\"||\"It's the knights that fought with the prince at the battle of Crecy,\" says the man in green. \"Only they can wear the garter. I know, because I was there! I'm a yeoman farmer, but I was one of the king's archers at Crecy. Those were the days! It was the archers that won the battle, but the knights who rode off with all the glory!\"||\"Ah, get off, Yeoman Tom,\" says the boy. \"Ye're always puffin' yerself and yer bows and arrows.\"||So this man fought with the prince at the famous Battle of Crecy! \"Do you know what the motto means,\" you ask, \"Honi soit qui mal y pense?\"||\"You got me over a barrel,\" says Tom. \"It's French, is all I know. I don't speak French, but I think mal means 'evil.'\"">
 
 <ROOM STORY007
 	(DESC "007")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT007)
+	(CONTINUE STORY008)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT008 "The crowd surges forward. You barely have room to breathe! A man in black robe trimmed with fur rides just behind the prince. He doesn't look happy as everyone else. He must be the captured King of France.||The man who fought with Edward at Crecy looks closely at you. \"Say, I've not seen you before. Traveling, are you? Looking for work?\"||\"Uh, yes,\" you say.||\"Well, friend, you've come to the right place! Ever since 1349, we've had work for any pair of hands that can hold a hoe. So many people died that year, in the Great Death, that plenty of good work has gone a-begging since. Come along with me!\"||\"My master needs another apprentice,\" says the boy in the leather apron. \"Ye can find me down on Hastings Street if ye'd rather learn to be a harness maker.\"||Taking a job is not a bad idea, you think. It looks like you're in the correct time period. Now you have to find a way to get to know some knights. Which of these two opportunities will bring you closer to your goal?">
+<CONSTANT CHOICES008 <LTABLE "stay in the same time and join the yeoman on the manor farm" "stay in the same time and become apprentice to a harness maker">>
 
 <ROOM STORY008
 	(DESC "008")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT008)
+	(CHOICES <LTABLE STORY013 STORY023>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT009 "You're sitting in the harness maker's shop, surrounded by half-finished leg pieces, breast pieces and shields. You've been working for a week now. In the little spare time you have, Richard has been teaching you more about fighting with quarterstaves.||\"Keep those bellows pumping!\" shouts the master.||Sweat runs down your face. Your job is to keep a red-hot fire going. You push up and down with your foot on a big windbag. The workmen hammer on the sheets of glowing metal, sending sparks flying everywhere. A spark lands in your hair! You brush it out with your hand. Out of the corner of your eye, you see somebody enter the shop.||\"Welcome, good Sir Nigel!\" says the master. Finally, a knight has arrived to pick up a suit of armor. He's about twenty-five years old and wears a dark blue garter around his arm! That's just what you've been looking for.">
 
 <ROOM STORY009
 	(DESC "009")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(CONTINUE STORY011)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY010
-	(DESC "010")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT011 "\"Here it is,\" the master says proudly, holding out a new shield. You help Sir Nigel into his armor, holding the different pieces so he can slip them on.||Nigel takes a few steps around the room. \"The joints are a mite stiff,\" he says. His voice sounds funny, echoing inside the helmet. \"But I am pleased.\"||As you help Sir Nigel take his armor off, he looks at you.||\"A strange thing,\" he says. \"You much resemble an old friend of mine. But you're too young to have been with us at Crecy, are you not?\"||\"Crecy?\" you say.||\"Surely you've heard of Crecy, the battle famous!\" He taps the garter on his arm. \"Honi soit qui mal y pense. We were all there. Evil to those...\"||\"The will be enough, apprentice!\" your master says. \"Return to your work!\" Sir Nigel and his servants carry the armor away.||The famous motto! You've found a knight who might now about it. But he is waling out the door! Time to make your move, you think as you hold a red-hot piece of iron in the fire. Why not run after Sir Nigel and ask him what it means?||\"Watch what ye're doing, idiot!\" your master shouts. Startled, you pull the iron out of the flames. As you do, you knock over a tub full of metal-eating acid. You jump out of the way as it pours across the floor.||\"You fool!\" shouts the master, hitting you over the head with a stick.">
 
 <ROOM STORY011
 	(DESC "011")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT011)
+	(CONTINUE STORY012)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT012 "You throw off your leather apron. \"I'm leaving,\" you say.||\"Leave?\" the master roars. \"You cannot leave. You're mine, worthless as you are, for seven long years. Do you know what we do to apprentices who run away?\" He hold a red-hot piece of steel in front of you. \"We brand them on the forehead with this!\"||The door is right behind you. \"Look!\" you say, pointing over the master's shoulder. He turns for a moment, and you run out the door.||\"After the runaway!\" the master shouts. \"Don't let the devil get away!\"||The street is full of horses, carts, and people. You run as fast as you can, but the men chasing you are familiar with these streets. You can't see Sir Nigel anywhere. Where would he have gone?||The cathedral lies ahead of you, on the left. To your right is a guildhall, a big building where the cloth merchants meet. It might be full of people, if you're lucky, and places to hide.||The men are almost at your heels! Where should you hide?">
+<CONSTANT CHOICES012 <LTABLE "hide in the cathedral" "in the guildhall">>
 
 <ROOM STORY012
 	(DESC "012")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT012)
+	(CHOICES CHOICES012)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY013
 	(DESC "013")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -199,7 +114,7 @@
 
 <ROOM STORY014
 	(DESC "014")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -224,7 +139,7 @@
 
 <ROOM STORY016
 	(DESC "016")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -241,7 +156,7 @@
 
 <ROOM STORY017
 	(DESC "017")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -277,7 +192,7 @@
 
 <ROOM STORY020
 	(DESC "020")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -294,7 +209,7 @@
 
 <ROOM STORY021
 	(DESC "021")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -311,7 +226,7 @@
 
 <ROOM STORY022
 	(DESC "022")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -328,7 +243,7 @@
 
 <ROOM STORY023
 	(DESC "023")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -345,7 +260,7 @@
 
 <ROOM STORY024
 	(DESC "024")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -362,7 +277,7 @@
 
 <ROOM STORY025
 	(DESC "025")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -379,7 +294,7 @@
 
 <ROOM STORY026
 	(DESC "026")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -396,7 +311,7 @@
 
 <ROOM STORY027
 	(DESC "027")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -413,7 +328,7 @@
 
 <ROOM STORY028
 	(DESC "028")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -430,7 +345,7 @@
 
 <ROOM STORY029
 	(DESC "029")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -447,7 +362,7 @@
 
 <ROOM STORY030
 	(DESC "030")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -464,7 +379,7 @@
 
 <ROOM STORY031
 	(DESC "031")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -481,7 +396,7 @@
 
 <ROOM STORY032
 	(DESC "032")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -498,7 +413,7 @@
 
 <ROOM STORY033
 	(DESC "033")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -515,7 +430,7 @@
 
 <ROOM STORY034
 	(DESC "034")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -532,7 +447,7 @@
 
 <ROOM STORY035
 	(DESC "035")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -549,7 +464,7 @@
 
 <ROOM STORY036
 	(DESC "036")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -566,7 +481,7 @@
 
 <ROOM STORY037
 	(DESC "037")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -583,7 +498,7 @@
 
 <ROOM STORY038
 	(DESC "038")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -600,7 +515,7 @@
 
 <ROOM STORY039
 	(DESC "039")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -617,7 +532,7 @@
 
 <ROOM STORY040
 	(DESC "040")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -634,7 +549,7 @@
 
 <ROOM STORY041
 	(DESC "041")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -651,7 +566,7 @@
 
 <ROOM STORY042
 	(DESC "042")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -668,7 +583,7 @@
 
 <ROOM STORY043
 	(DESC "043")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -685,7 +600,7 @@
 
 <ROOM STORY044
 	(DESC "044")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -702,7 +617,7 @@
 
 <ROOM STORY045
 	(DESC "045")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -719,7 +634,7 @@
 
 <ROOM STORY046
 	(DESC "046")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -736,7 +651,7 @@
 
 <ROOM STORY047
 	(DESC "047")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -753,7 +668,7 @@
 
 <ROOM STORY048
 	(DESC "048")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -770,7 +685,7 @@
 
 <ROOM STORY049
 	(DESC "049")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -787,7 +702,7 @@
 
 <ROOM STORY050
 	(DESC "050")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -804,7 +719,7 @@
 
 <ROOM STORY051
 	(DESC "051")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -821,7 +736,7 @@
 
 <ROOM STORY052
 	(DESC "052")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -838,7 +753,7 @@
 
 <ROOM STORY053
 	(DESC "053")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -855,7 +770,7 @@
 
 <ROOM STORY054
 	(DESC "054")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -872,7 +787,7 @@
 
 <ROOM STORY055
 	(DESC "055")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -889,7 +804,7 @@
 
 <ROOM STORY056
 	(DESC "056")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -906,7 +821,7 @@
 
 <ROOM STORY057
 	(DESC "057")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -923,7 +838,7 @@
 
 <ROOM STORY058
 	(DESC "058")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -940,7 +855,7 @@
 
 <ROOM STORY059
 	(DESC "059")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -957,7 +872,7 @@
 
 <ROOM STORY060
 	(DESC "060")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -974,7 +889,7 @@
 
 <ROOM STORY061
 	(DESC "061")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -991,7 +906,7 @@
 
 <ROOM STORY062
 	(DESC "062")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1008,7 +923,7 @@
 
 <ROOM STORY063
 	(DESC "063")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1025,7 +940,7 @@
 
 <ROOM STORY064
 	(DESC "064")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1042,7 +957,7 @@
 
 <ROOM STORY065
 	(DESC "065")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1059,7 +974,7 @@
 
 <ROOM STORY066
 	(DESC "066")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1076,7 +991,7 @@
 
 <ROOM STORY067
 	(DESC "067")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1093,7 +1008,7 @@
 
 <ROOM STORY068
 	(DESC "068")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1110,7 +1025,7 @@
 
 <ROOM STORY069
 	(DESC "069")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1127,7 +1042,7 @@
 
 <ROOM STORY070
 	(DESC "070")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1144,7 +1059,7 @@
 
 <ROOM STORY071
 	(DESC "071")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1161,7 +1076,7 @@
 
 <ROOM STORY072
 	(DESC "072")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1178,7 +1093,7 @@
 
 <ROOM STORY073
 	(DESC "073")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1195,7 +1110,7 @@
 
 <ROOM STORY074
 	(DESC "074")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1212,7 +1127,7 @@
 
 <ROOM STORY075
 	(DESC "075")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1229,7 +1144,7 @@
 
 <ROOM STORY076
 	(DESC "076")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1246,7 +1161,7 @@
 
 <ROOM STORY077
 	(DESC "077")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1263,7 +1178,7 @@
 
 <ROOM STORY078
 	(DESC "078")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1280,7 +1195,7 @@
 
 <ROOM STORY079
 	(DESC "079")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1297,7 +1212,7 @@
 
 <ROOM STORY080
 	(DESC "080")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1314,7 +1229,7 @@
 
 <ROOM STORY081
 	(DESC "081")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1331,7 +1246,7 @@
 
 <ROOM STORY082
 	(DESC "082")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1348,7 +1263,7 @@
 
 <ROOM STORY083
 	(DESC "083")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1365,7 +1280,7 @@
 
 <ROOM STORY084
 	(DESC "084")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1382,7 +1297,7 @@
 
 <ROOM STORY085
 	(DESC "085")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1399,7 +1314,7 @@
 
 <ROOM STORY086
 	(DESC "086")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1416,7 +1331,7 @@
 
 <ROOM STORY087
 	(DESC "087")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1433,7 +1348,7 @@
 
 <ROOM STORY088
 	(DESC "088")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1450,7 +1365,7 @@
 
 <ROOM STORY089
 	(DESC "089")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1467,7 +1382,7 @@
 
 <ROOM STORY090
 	(DESC "090")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1484,7 +1399,7 @@
 
 <ROOM STORY091
 	(DESC "091")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1501,7 +1416,7 @@
 
 <ROOM STORY092
 	(DESC "092")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1518,7 +1433,7 @@
 
 <ROOM STORY093
 	(DESC "093")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1535,7 +1450,7 @@
 
 <ROOM STORY094
 	(DESC "094")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1552,7 +1467,7 @@
 
 <ROOM STORY095
 	(DESC "095")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1569,7 +1484,7 @@
 
 <ROOM STORY096
 	(DESC "096")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1586,7 +1501,7 @@
 
 <ROOM STORY097
 	(DESC "097")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1603,7 +1518,7 @@
 
 <ROOM STORY098
 	(DESC "098")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1620,7 +1535,7 @@
 
 <ROOM STORY099
 	(DESC "099")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1637,7 +1552,7 @@
 
 <ROOM STORY100
 	(DESC "100")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1654,7 +1569,7 @@
 
 <ROOM STORY101
 	(DESC "101")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1671,7 +1586,7 @@
 
 <ROOM STORY102
 	(DESC "102")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1688,7 +1603,7 @@
 
 <ROOM STORY103
 	(DESC "103")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1705,7 +1620,7 @@
 
 <ROOM STORY104
 	(DESC "104")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1722,7 +1637,7 @@
 
 <ROOM STORY105
 	(DESC "105")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1739,7 +1654,7 @@
 
 <ROOM STORY106
 	(DESC "106")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1756,7 +1671,7 @@
 
 <ROOM STORY107
 	(DESC "107")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1773,7 +1688,7 @@
 
 <ROOM STORY108
 	(DESC "108")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1790,7 +1705,7 @@
 
 <ROOM STORY109
 	(DESC "109")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1807,7 +1722,7 @@
 
 <ROOM STORY110
 	(DESC "110")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1824,7 +1739,7 @@
 
 <ROOM STORY111
 	(DESC "111")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1841,7 +1756,7 @@
 
 <ROOM STORY112
 	(DESC "112")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1858,7 +1773,7 @@
 
 <ROOM STORY113
 	(DESC "113")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1875,7 +1790,7 @@
 
 <ROOM STORY114
 	(DESC "114")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1892,7 +1807,7 @@
 
 <ROOM STORY115
 	(DESC "115")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1909,7 +1824,7 @@
 
 <ROOM STORY116
 	(DESC "116")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1926,7 +1841,7 @@
 
 <ROOM STORY117
 	(DESC "117")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1943,7 +1858,7 @@
 
 <ROOM STORY118
 	(DESC "118")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1960,7 +1875,7 @@
 
 <ROOM STORY119
 	(DESC "119")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1977,7 +1892,7 @@
 
 <ROOM STORY120
 	(DESC "120")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -1994,7 +1909,7 @@
 
 <ROOM STORY121
 	(DESC "121")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -2011,7 +1926,7 @@
 
 <ROOM STORY122
 	(DESC "122")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -2028,7 +1943,7 @@
 
 <ROOM STORY123
 	(DESC "123")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
@@ -2045,7 +1960,7 @@
 
 <ROOM STORY124
 	(DESC "124")
-	(STORY BLANK)
+	(STORY TEXT)
 	(EVENTS NONE)
 	(PRECHOICE NONE)
 	(CHOICES NONE)
