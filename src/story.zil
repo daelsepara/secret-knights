@@ -75,6 +75,7 @@
 
 <ROOM STORY009
 	(DESC "009")
+	(STORY TEXT009)
 	(CONTINUE STORY011)
 	(FLAGS TAKEBIT)>
 
@@ -238,174 +239,81 @@
 <ROUTINE STORY030-PRECHOICE ()
 	<EMPHASIZE "You jumped back in time to Winchester, 1357.">>
 
+<CONSTANT TEXT032 "You fall on stony ground. You can see your horse, grazing up ahead, with the empty pieces of armors lumped across the saddle.||There's a crowd of people gathered around the horse. They stare at you.||\"A sorcerer!\" they cry. \"First there was someone riding in the armor on the horse. Then, by magic, the armor was empty! Now the sorcerer has reappeared!\"||You get up and try to run, but they chase you down and grab you.||\"Take the magician to the dungeon,\" someone says. \"The priests will know what to do!\"">
+
 <ROOM STORY032
 	(DESC "032")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT032)
+	(CONTINUE STORY042)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT033 "You run into the guild-hall. Its a big stone building with long walls covered with tapestries.||Unfortunately, there's no crowd here for you to hide in. A few young men bat a ball around with flat, threaded mallets that look
+like primitive tennis rackets.||\"There ye are,\" says a voice. You turn to run, but the harness makers men grab your arms.||\"Pardon us,\" they say as they drag you out, \"the king forbids apprentices to run away. We'll try to keep the master from branding ye. But ye must be punished. Ye're going to spend a night and a day
+in the stocks!\"">
 
 <ROOM STORY033
 	(DESC "033")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT033)
+	(CONTINUE STORY030)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT034 "You're in the same quiet chapel of Winchester Cathedral, one week earlier. Its May 20 again. No one is hammering or climbing the long ladders today. Everyone must be outside, where you can hear the crowd cheering Prince Edward and his prisoner, King John.||You go out and follow the procession. The knights get down from their horses and enter the cloth merchants guildhall across the way. You try to follow them in, but a guard pushes you back.||\"Where think ye that ye're going?\" he roars. He waves his sword in the air. \"Stand back!\"||A crowd of beggars tries to get in, too. \"Please!\" they beg. \"A few coins for the poor!\"||The door of the hall is pulled back. A man in a fur-lined coat
+comes out.||\"A few coins?\" he says to the beggars. \"A lucky dozen of you will get more than that. As is the custom, the prince has ordered that twelve poor people be invited to share in his banquet, to represent the twelve apostles at the Last Supper.\" He points to a one-armed beggar. \"You,\" he says, \"and you, and you ... and you.\" He's pointing at you!||You enter a large torchlit hall and find a seat at a very long wooden table next to a man dressed in silk and fur. Servants carry in huge trays with roast geese and pigs. The beggars stare at the food, eyes wide, as if they can't believe it's real.">
 
 <ROOM STORY034
 	(DESC "034")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT034)
+	(CONTINUE STORY035)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT035 "There's a wooden plate in front of you, and a bowl, but no spoons, forks, or napkins. How are you going to eat without a fork?||The prince rises. \"By the grace of God, heavenly provider, let the feast begin!\" He picks up a piece of meat with his fingers and stuffs it in his mouth.||Everyone else digs in, too. Sometimes they use a piece of bread to slop up their gravy, but mostly they eat with their fingers. You've never seen a more complete display of poor table manners. And these are the rich people!||Since there are no utensils, you do as they do. Soon your fingers are all greasy.||\"Dirty fingers, my young friend?\" asks the man sitting next to you. \"I'll show you what to do.\" He looks under the table, and whistles. A big, furry dog trots up. He gives the dog a scrap of meat, and wipes his fingers on the dogs fur.||He's using a dog for a napkin! Well, you wonder, what do they do for a handkerchief?||The man next to you laughs at your expression. \"What ails you?\" he says. \"That's how its done at banquets in all the world. I know. I'm a wanderer. Froissart is my name. I go from court to court, telling stories about the knights and kings of many lands. Some day I shall collect them all in a book.\"||\"Say, maybe you can help me,\" you whisper. \"I've been wondering about the garters those knights have on their sleeves.\"">
 
 <ROOM STORY035
 	(DESC "035")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT035)
+	(CONTINUE STORY037)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY036
-	(DESC "036")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT037 "\"Ah, yes,\" says Froissart. \"The knights of the Order of the
+Garter. The noblest knights of England! They have a curious motto, Honi soit qui mal y pense.\"||\"Do you know what it means?\"||\"I know the sense of the words, of course. 'Evil to those who think evil of it.'\"||At last! You've found someone who knows about the famous motto! But -- what do the words really mean? Evil to whom, who thinks evil of what? You ask Froissart.||\"I'm afraid I cannot help you there. Only King Edward himself may really know the answer. He started the Order of the Garter -- I think it was at the end of a tournament at Windsor in 1344.\"||Windsor, in 1344? You went to a tournament at Windsor, in that year, when you first got here! Only you saw the first day of a three-day tournament. If Froissart is right, you should go there at its end. The king knows the meaning of the motto, and the king could make you a knight.||The banquet is nearly over. The beggars at the end of the table are sitting back, grinning, after the best meal they've had in years.||\"Thank you very much, Mr. Froissart,\" you say, \"I must be going
+now.\"||You find an empty side room at the back of the hall.">
 
 <ROOM STORY037
 	(DESC "037")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT037)
+	(PRECHOICE STORY037-PRECHOICE)
+	(CONTINUE STORY061)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY037-PRECHOICE ()
+	<EMPHASIZE "You jump back thirteen years to Windsor, 1344.">>
+
+<CONSTANT TEXT038 "You decide to duel with Randall to prove you aren't a sorcerer. No true knight would turn down a challenge like that, and you are supposed to become a knight!||Randall tosses you a quarterstaff. You know how to use it. You also know that trial by water could have lead to your death by drowning.||A crowd gathers around you, including Sir Cuthbert. A blond boy about fourteen years old looks on with amusement.||\"On your guard!\" shouts Randall. He swings his pole straight at your head!||You duck the flying staff. Randall's too confident. He's left himself wide open! You jab the end of your staff right in his stomach.||Oof!\" he says, landing on his back.||The crowd around you laughs. \"Well done!\" shouts the blond boy.||Randall lurches to his feet and charges you. You block his swing, then the next. He is strong. Richard taught you, though, that strength is only a small part of the game. Fast reflexes and skillful footwork will beat brute strength every time.">
 
 <ROOM STORY038
 	(DESC "038")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT038)
+	(CONTINUE STORY040)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY039
-	(DESC "039")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT040 "You notice a pattern in the way Randall moves. When he jumps ahead with his left foot, he almost always is about to swing the long end of his pole up high and down on your head.||The next time he does it, you know what to do. You leap to the right and swing your quarterstaff sideways.||Your blow knocks Randall to the ground. The crowd around you cheers.||Randall's angry now. He jumps up, running straight at you with his pole out like a sword!||You step neatly to the side and smack him on the rear. Everyone laughs. An angry opponent, you know, is a weak opponent. You have to keep a cool head.||Randall's easy to beat, now. You land a hard blow on his stomach, and he falls down, breathless.||\"Well fought!\" one of the knights cries. \"So brave a fighter could not be a sorcerer.\"||The blond boy claps you on the shoulder and leads you away, as Sir Cuthbert helps Randall up. \"A well-fought and courageous game. Where are you from? I don't think I know you.\" He wears a red tunic with three gold leopards or lions embroidered on it.||\"I'm a visitor,\" you say. \"From far away.\"||\"Be you noble or varlet?\"||Now, that's a tricky question. He wants to know if you're a nobleman or not!||\"I come from a land,\" you say vaguely, \"where all of us are noble.\"">
 
 <ROOM STORY040
 	(DESC "040")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT040)
+	(CONTINUE STORY041)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT041 "He smiles. \"By my word! You speak well of your native land. I
+can tell you are of noble education by your proud speech.\"||\"My lord,\" says a knight, \"perhaps this is the new squire we expected from the kingdom of Navarre.\"||Navarre? You can't tell them where you're really from. Why not let them believe you're from a place far away, as Navarre seems to be?||\"My courageous friend from Navarre,\" says the blond boy, \"will you join my service as a squire?\"||You're delighted, but surprised. He isn't any older than most squires himself! You'll have to become a squire before you can become a knight, but should you accept his offer? Or wait and try to become a squire to one of the other, older knights?">
+<CONSTANT CHOICES041 <LTABLE "tell the blond boy yes" "tell him no">>
 
 <ROOM STORY041
 	(DESC "041")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT041)
+	(CHOICES CHOICES041)
+	(DESTINATIONS <LTABLE STORY049 STORY051>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY042
