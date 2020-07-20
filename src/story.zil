@@ -66,7 +66,8 @@
 <ROOM STORY008
 	(DESC "008")
 	(STORY TEXT008)
-	(CHOICES <LTABLE STORY013 STORY023>)
+	(CHOICES CHOICES008)
+	(DESTINATIONS <LTABLE STORY013 STORY023>)
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
@@ -92,6 +93,7 @@
 	(DESC "012")
 	(STORY TEXT012)
 	(CHOICES CHOICES012)
+	(DESTINATIONS <LTABLE STORY020 STORY033>)
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
@@ -149,192 +151,92 @@
 	(CONTINUE STORY034)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY021
-	(DESC "021")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT022 "You're standing in an alleyway in Windsor, May 15, 1349. A cart rolls through the street, loaded with bodies. The plague is raging! Of course -- you should have known better. It arrived in england last year, in 1348. People were safe all winter because of the cold, but when it got warmer in the spring the rats and fleas started spreading the disease again.||You hear music coming from the public square. You look out.||What a strange sight! The square is full of people dancing.||A girl comes out of the crowd. \"I have been dancing for two days,\" she says. \"If we never stop dancing, we will not catch the plague.\"||Oh, this is sad. They hoe that dancing will protect them from the disease! You back away.||You'd better retrace your steps. You wander down the street, looking for a place to jump in time without being seen.">
 
 <ROOM STORY022
 	(DESC "022")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT022)
+	(CONTINUE STORY015)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT023 "You're waling through the crowded streets of Winchester. You're looking for the harness maker's shop. You remember that in this time period harness is another word for a suit of armor. You might talk to some knights at a harness ship, when they come to buy armor!||The main street of Winchester is paved with round stones. Down the middle and along the sides are gutters full of all sorts of garbage. It stinks! The gutters are open, flowing sewers. It will be centuries before modern plumbing is invented.||\"Gardyloo!\" shouts a woman in a window of one of the gingerbread houses. You jump out of the way just in time, as she dumps a pail full of watery garbage right into the street.||\"Watch were you're throwing that!\" you say.||the woman stares down at you. \"Watch out yourself,\" she snaps. \"I warned you, gardyloo!\"||That must mean \"beware of the garbage,\" you decide. You watch the houses above you as you walk, looking for people about to dump their trash.">
 
 <ROOM STORY023
 	(DESC "023")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT023)
+	(CONTINUE STORY024)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT024 "\"You there!\" someone shouts. \"Do ye still want a job?\"||It's the harness maker's apprentice. He's playing with a friend, fighting with long wooden poles.||\"I'm interested,\" you reply.||\"Wait here with me,\" the apprentice says. \"The master's not returned yet from the prince's parade. Here!\" He tosses you one of the wooden poles. \"Let's play at quarterstaves.\"||So that's what a quarterstaff is! You hold your quarterstaff the way he does, with one hand at the middle and the other to one side. He tries to hit you with the end of the stick.||\"Fairly done,\" he says. Then he swings the pole around quickly and knocks you to the ground.||\"Hah!\" he laughs while helping you up. \"I can teach ye a thing or two! My name's Richard.\"||You tell him your name and shake his hand. He proceeds to show you how to win at quarterstaves.||\"So there you are!\" a loud voice bellows. A big bald man in a leather apron slaps Richard on the side of the head. \"I said you were free for a half holiday, not a whole holy week! Back to the ship with you!\"||Richard rubs his head and loops up. \"I know, sir. But look! I've found ye a new apprentice.\"">
 
 <ROOM STORY024
 	(DESC "024")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT024)
+	(CONTINUE STORY025)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT025 "The harness maker rubs his chin as he looks you over. \"So you want to be a harness maker, eh? It will mean hard work, from sunup to sundown, six days a week except holy days. But as sure as day follows night, after seven years of apprenticeship you'll know all about making armor. Then you'll be free to go off and make your fortune as you see fit.\"||Seven years! You don't want to stay here that long, but you don't want to lie to him. What can you say?||\"As long as day follows night,\" you tell him. \"I will work for you.\" That's not promising anything, for a time traveler. For you, day doesn't always follow night!">
 
 <ROOM STORY025
 	(DESC "025")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT025)
+	(PRECHOICE STORY025-PRECHOICE)
+	(CONTINUE STORY009)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY025-PRECHOICE ()
+	<EMPHASIZE "You become a harness maker">>
+
+<CONSTANT TEXT026 "You're standing just outside a small village near Windsor. Patches of snow lie all about. That's good -- you jumped ahead in time because the plague went away in the winter. The germs were carried by fleas and rats, which aren't as active in the wintertime.||You walk down the main street of the village. Where is everybody? The houses look empty, deserted.||This is a ghost town! Did the plague leave nothing alive here at all? Maybe you should jump further ahead in time.||Something moves in a doorway. It's only a dog, slinking along the side of a house. The poor dog is thin. Its eyes are wild.||\"Awroo!\" There's another dog behind you. And another up ahead. You're surrounded by a pack of dogs, growling and drooling with hunger! They've found something unusual: nice, fat prey. You!||One of the dogs trots forward, baring it fangs. But he's going to have to find his dinner somewhere else!">
 
 <ROOM STORY026
 	(DESC "026")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT026)
+	(PRECHOICE STORY026-PRECHOICE)
+	(CONTINUE STORY005)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY026-PRECHOICE ()
+	<EMPHASIZE "You jump ahead 7 years.">>
+
+<CONSTANT TEXT027 "You're standing in a narrow street in the town below Windsor Castle. It's September 15, 1349. All the doors and windows you see are shut. There's nobody around, and an awful smell hangs in the air. A wooden cart pulled by a hungry-looking ox turns the corner. Two men in long robes with dark hoods walk beside it.||\"Bring out your dead!\" they shout. \"Bring out your dead!\"||One of the doors opens, and two weeping girls pull something wrapped in a blanket out into the street. The blanket slips for a moment -- it's a dead body! There's an ugly black lump under the dead woman's shoulder. Her white face is frozen in a look of horrible pain.||The plague! It's 1349. You've arrived smack in the middle of the Black Death, the worst disease in the history of the world.||The men toss the body onto the cart, which is full of other bodies. This is awful! So many people are dying at once that the people left alive can't even give them funerals.|||You run down a side street to get away form the sight. You come to a wide public square.">
 
 <ROOM STORY027
 	(DESC "027")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT027)
+	(CONTINUE STORY028)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT028 "A bony hand grips your arm.||\"Saints' relics, at an unholy price,\" whispers an old man in a black hood. \"Protection for your immortal soul -- they will guarantee you a place in paradise! Only a few coins.\" He brings out a little box and opens it. \"This is the finger of a blessed saint. Pardon for all your sins! We're all going to die. This is the end of the world! But you may choose: will you go to heaven, or to hell?\"||\"No thanks,\" you say, trying not to look in the box.||He grips you tighter. \"I don't know your face,\" he says. \"From where did you come?\"||\"I'm ... a visitor.\"||\"A stranger!\" He throws back his hood and calls to some people on the other side of the square. \"Look here!\" he cries. \"A stranger among us! It may be one of the evil ones who have been poisoning the wells and killing us!\"||More hands grab you.">
 
 <ROOM STORY028
 	(DESC "028")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT028)
+	(CONTINUE STORY029)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT029 "\"Let me go,\" you yell. \"No one is poisoning the wells. That's not what's causing the plague!\"||\"Oho. So it's not the wells, but something else. And you know what it is! Of course you know, because you're causing it yourself!\"||You jerk your arm from his grasp and run.||\"Catch the stranger! The poisoner is getting away!\"||You turn into an alley and catch your breath. Time to get out of here! But should you jump a few months ahead in time, or a few months back?">
+<CONSTANT CHOICES029 <LTABLE "jump four months back in time" "four months ahead">>
 
 <ROOM STORY029
 	(DESC "029")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT029)
+	(CHOICES CHOICES029)
+	(DESTINATIONS <LTABLE STORY022 STORY026>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT030 "You're being hauled off to the stocks! Across from the cathedral sits a row of big wooden structures, with holes in them. The men carrying you tip the top block of wood up and slip your head and legs through the carved holes set between the two halves.||Thunk! You're locked in! You squirm about, but the wood is tight around your neck and ankles.||All day long people laugh and throw things at you as they walk by. The angrier you get, the more they laugh. What a humiliating way to be punished! You could jump to another time, but according the the rules of Time Travel, you're supposed to avoid disappearing when people can see you, unless it's a matter of life and death. You wait until night falls, when no one is around, before you can leave.">
 
 <ROOM STORY030
 	(DESC "030")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT030)
+	(PRECHOICE STORY030-PRECHOICE)
+	(CONTINUE STORY023)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY031
-	(DESC "031")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<ROUTINE STORY030-PRECHOICE ()
+	<EMPHASIZE "You jumped back in time to Winchester, 1357.">>
 
 <ROOM STORY032
 	(DESC "032")

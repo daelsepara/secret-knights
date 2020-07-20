@@ -6,4 +6,4 @@ echo "Checking player for spelling errors..."
 spell -n player.zil | grep -v -Ev "DESC|COND|LTABLE|RTRUE|RFALSE|PERSONBIT|CRLF|NARTICLEBIT|AUX" | grep -i -v -Ev "longbow|: III's" | uniq
 echo
 echo "Checking story for spelling errors..."
-spell -n story.zil | grep -v -Ev "DESC|LIGHTBIT|CRLF|HLIGHT|FCLEAR|COND|LTABLE|PRECHOICE|RTRUE|RFALSE|READLINE|LEXBUF|GETB|TAKEBIT|DATAFILES" | grep -i -v -Ev "bizan|: oof|cuthbert|philippa|quarterstaves|ploughing|longbow|: ye're|: yerself|: honi|: soit|: qui|: mal|: pense|: ye'd|: yer|: plough" | uniq
+spell -n story.zil | grep -v -Ev "DESC|LIGHTBIT|CRLF|HLIGHT|FCLEAR|COND|LTABLE|PRECHOICE|RTRUE|RFALSE|READLINE|LEXBUF|GETB|TAKEBIT|DATAFILES" | grep -i -v -Ev "bizan|: oof|cuthbert|philippa|quarterstaves|ploughing|longbow|quarterstaff|: ye're|: yerself|: honi|: soit|: qui|: mal|: pense|: ye'd|: yer|: plough|: gardyloo|: awroo" | uniq
