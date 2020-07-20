@@ -1,0 +1,1 @@
+; "no codewords are defined for this gamebook"
