@@ -316,158 +316,71 @@ can tell you are of noble education by your proud speech.\"||\"My lord,\" says a
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
+<CONSTANT TEXT042 "A guard takes you to the castle to await your trial on the charge of being a sorcerer. You enter the castle through a thick oak door. You brush against the cold, damp stone walls of a dark tunnel. A man appears, dressed in black. He holds a flickering torch.|| He takes you down a steep stone staircase. In the dim torchlight you see a row of cells with doors made of iron bars. The man unlocks one of the doors and shoves you inside. He picks up a thick chain attached to a ring in the wall and locks it with a click on your leg.||You're locked in a dungeon!||\"Psst!\" someone whispers. You go to the iron door.||\"What year is it?\" a hoarse voice calls.||\"It's 1344,\" you tell him. \"How long have you been here?\"||\"I don't know!\" the voice wails. \"They've forgotten me. I've forgotten why they put me here!\"||You made a mistake in getting locked up this way, you think, but the answer to the riddle of the motto may still be in this time.||You wait in the damp dungeon cell, trying to think of a way to escape. A knight should be brave, after all, and you should act like one if you want to become one.">
+
 <ROOM STORY042
 	(DESC "042")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT042)
+	(CONTINUE STORY044)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY043
-	(DESC "043")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT044 "You hear the guard coming. You flatten yourself against the damp cell wall, ready to push off when the door opens.||Only you hear two voices coming down the tunnel. They've come to take you to your trial!||The guards drag you back outside. Three priests in long black robes take you to the edge of a pond. They tie your hands behind your back and bind your feet together.||\"Prisoner,\" says the head priest, \"you stand accused of witchcraft. By the ancient test, you will be thrown into the water. If you float, we will know you are a sorcerer. Then you will be burned at the stake. If you are innocent, you will sink!\"||This trial by water is crazy! What good is it to prove you're innocent if the proof makes you drown?||Two priests carry you to a rock above the water. You take a deep breath. They swing you back and forth and fling you into the pond!||You land in the cold water. You struggle to get free, but the ropes on your hand and feet are tightly tied.||You've had enough of this. You're not going to wait around to see
+if you sink.">
+<CONSTANT CHOICES044 <LTABLE "jump ahead in time to 1349" "jump ahead to 1357">>
 
 <ROOM STORY044
 	(DESC "044")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT044)
+	(CHOICES CHOICES044)
+	(DESTINATIONS <LTABLE STORY027 STORY005>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT045 "You're standing with yeoman Tom and a group of his friends on the village green. Geese wander about as the men shoot three-foot-long arrows at a target.||\"Here,\" says Tom, \"this bow's just your size. Stand like this, with your elbow pointed at the target. Hold your arrow fast against the string, and pull back.\"||You pull the string with all your strength, but it's very difficult. You worry about the arrow slipping off the string, but you hold on. When you just can't pull any harder, you let it go.||TWING! The arrow wobbles through the air and lands in the base of a tree just missing a goose.||\"Ho ho!\" laughs Tom. \"Already collecting feathers for your arrows, eh?\"||\"Don't just pull with your arms,\" says another man. \"Use your entire body. Like this.\"||TWANG! His arrow lands dead center.||\"Good shot!\" cries another man. \"I'll give a tankard of ale to anyone who can shoot one better!\"">
 
 <ROOM STORY045
 	(DESC "045")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT045)
+	(CONTINUE STORY046)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT046 "Tom whips out an arrow, pulls, and in a flash it's gone. The second arrow slices the first one in two!||The men cheer. Tom drinks down his ale.||\"Lets go a-roving, boys!\" he roars.||You follow the men down the road toward Winchester. You stay out of their way as they shoot arrows at trees, birds, cats, and anything else that seems like a target.||They're still shooting arrows when you arrive at the gates of Winchester. Like most big towns, Winchester is surrounded by a high wall with a big arched gate in the middle. But there's something terrible above this gate: a row of skulls stuck up on wooden spikes!||\"What are those doing up there?\" you ask Tom.||\"Ho! Those are some fellows who just lost their heads, aren't they?\" he laughs. \"Rogues and criminals, they were. The Lord Mayor of Winchester had them put up there as a warning. Anyone coming through these walls had better behave.\"||\"They make a nice target, don't they,\" says one of Tom's friends. \"Let's see if I can hit one!\"||He pulls out an arrow and takes aim at one of the grisly things. The arrow zips up and over the wall.||Two angry guards come running out of the gate, followed by a man dressed in silk and furs. Tom's friend's arrow is stuck through his hat!">
 
 <ROOM STORY046
 	(DESC "046")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT046)
+	(CONTINUE STORY048)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY047
-	(DESC "047")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT048 "\"Who dared shoot an arrow through the Lord Mayors hat?\" the
+men shout. Your friends look at their feet. The guards look at you!||\"All right, young troublemaker,\" says one of them. \"You're going to spend a night and a day in the stocks!\"">
 
 <ROOM STORY048
 	(DESC "048")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT048)
+	(CONTINUE STORY030)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT049 "You take another look at the blond boy's tunic as Randall limps away. The tunic bears the leopard emblem of English royalty. This must be Edward, the Black Prince, whom you saw as a grown man in Winchester in 1357! Though he's young, he's the king's son and he already commands many knights.||\"To serve you will be an honor,\" you tell him. You start to kneel, but Edward takes your hand and pulls you up.||\"No need for formality, brave squire of Navarre,\" says the
+prince. He calls to another boy. \"This is Nigel, squire to one of my best knights, Sir John Chandos. Nigel, I want you to train our new squire.\"||Nigel bows and kisses the prince's hand. \"As you command, my lord,\" he says.||You follow Nigel and the prince. You join a crowd of knights and ladies gathering on a nearby hill around King Edward III. The king waves his hand, and instantly the crowd falls silent.">
 
 <ROOM STORY049
 	(DESC "049")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT049)
+	(CONTINUE TEXT050)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT050 "\"Many years ago,\" he shouts, \"according to the stories, the glorious King Arthur used to meet on this very hill with his Knights of the Round Table. The best knights of his kingdom would sit in a circle, so that no one knight could say that he sat at the head of the table.\"||\"We hereby swear, on our honor as a knight and king, that before four years have passed we will start a new Round Table. The best knights of our kingdom will sit with us here, in a chapel we will dedicate to the holy knight, St. George!\"||\"Hurrah!\" cry the knights and ladies. The knights wave their swords in the air. \"Hurrah for King Edward! Hurrah for the new Round Table!\"||Well, the king's plans for the best knights of our kingdom sound like the beginning of the order of knights you're looking for. But he didn't mention the garter, or the famous motto. Could Froissart have been wrong about the year he began the Order?||You take a close look at Nigel as he leads you off to the tents. You recognize him -- he's the knight you saw in 1357 at the armorer's shop you were working in! He's still a squire now, but you know that someday he'll become Sir Nigel and wear the garter. He'll be the perfect person to teach you what knights need to know. Then, when the opportunity comes to become a knight yourself, you'll be ready for it!">
 
 <ROOM STORY050
 	(DESC "050")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT050)
+	(PRECHOICE STORY050-PRECHOICE)
+	(CONTINUE STORY053)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY050-PRECHOICE ()
+	<EMPHASIZE "You decide to become a squire.">>
 
 <ROOM STORY051
 	(DESC "051")
