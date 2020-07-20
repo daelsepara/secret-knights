@@ -36,7 +36,7 @@
 	(CONTINUE STORY003)
 	(FLAGS TAKEBIT)>
 
-<CONSTANT TEXT003 "\"By all the blessed saints' toenails! Yes!\"||You pull him to his feet. The armor clicks and clanks as the knight moves. \"Nothing broken, thanks be to the Blessed One,\" he says. \"And thanks be to you, my young friend. Tell me -- did you see the wizard?\"||\"Uh, no,\" you say. \"What wizard?\"||\"As I rode, a magnificent wizard, with wings of purple, appeared in my path. My horse leaped like he had seen a demon! I could not see the wizard well, because the visor in my helmet is very narrow. But I tell you, it was amazing!\"||A wizard? Demon? What's amazing, you think as you help the knight catch the horses, is his imagination. That was you on the road -- and you don't have purple wings!||\"This is a sign of bad luck,\" continues the knight as he leads his horse back to the road. \"For such a thing to happen on my first practice ride of the day, ill fate must await me at King Edward's tournament. Are you going to watch us fight?\"||A tournament! There will be many knights there, perhaps including some who wear the garter. You tell him yes.||\"Come with me, then,\" says the knight. \"My name is Sir Cuthbert.\"||\"Don't do it, Sir Cuthbert!\" a  voice cries. A boy about fourteen years old jumps out form behind a tree.||\"So there you are,\" shouts Sir Cuthbert, \"you lazy, cowardly good-for-nothing! Squire Randall, why hide you there?\"||\"I too beheld the wizard,\" says Randall. \"It looked just as you have said. But swiftly it transformed itself, with evil magic -- into this creature here!\" He points an accusing finger at you.||Sir Cuthbert looks at you a moment. Then he scowls and hits his squire on the ear. \"Enough of your lies, scoundrel! Where were you to help me rise? I had to accept the aid of a kind stranger. And now you accuse this same kind person of witchcraft! You dare call yourself my squire? Someday I'll beat some sense into you! Come along, both of you!">
+<CONSTANT TEXT003 "\"By all the blessed saints' toenails! Yes!\"||You pull him to his feet. The armor clicks and clanks as the knight moves. \"Nothing broken, thanks be to the Blessed One,\" he says. \"And thanks be to you, my young friend. Tell me -- did you see the wizard?\"||\"Uh, no,\" you say. \"What wizard?\"||\"As I rode, a magnificent wizard, with wings of purple, appeared in my path. My horse leaped like he had seen a demon! I could not see the wizard well, because the visor in my helmet is very narrow. But I tell you, it was amazing!\"||A wizard? Demon? What's amazing, you think as you help the knight catch the horses, is his imagination. That was you on the road -- and you don't have purple wings!||\"This is a sign of bad luck,\" continues the knight as he leads his horse back to the road. \"For such a thing to happen on my first practice ride of the day, ill fate must await me at King Edward's tournament. Are you going to watch us fight?\"||A tournament! There will be many knights there, perhaps including some who wear the garter. You tell him yes.||\"Come with me, then,\" says the knight. \"My name is Sir Cuthbert.\"||\"Don't do it, Sir Cuthbert!\" a voice cries. A boy about fourteen years old jumps out form behind a tree.||\"So there you are,\" shouts Sir Cuthbert, \"you lazy, cowardly good-for-nothing! Squire Randall, why hide you there?\"||\"I too beheld the wizard,\" says Randall. \"It looked just as you have said. But swiftly it transformed itself, with evil magic -- into this creature here!\" He points an accusing finger at you.||Sir Cuthbert looks at you a moment. Then he scowls and hits his squire on the ear. \"Enough of your lies, scoundrel! Where were you to help me rise? I had to accept the aid of a kind stranger. And now you accuse this same kind person of witchcraft! You dare call yourself my squire? Someday I'll beat some sense into you! Come along, both of you!">
 
 <ROOM STORY003
 	(DESC "003")
@@ -95,38 +95,23 @@
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
+<CONSTANT TEXT013 "You're walking in a field under the hot sun. Tom, your yeoman-farmer friend, walks up ahead. He steers a wooden plough pulled along by an ox. The plough rips through a long groove called a furrow through the soil.||A basket full of seeds hangs from your neck. You dip your hand in the basket and plant seeds in the furrow as you walk along.||\"Yeoman Tom!\" shouts a man by the edge of the road.||Tom pulls on the oxøs reign to make it stop. \"Bah!\" he says. \"Here comes the bailiff. Just when I thought we'd get a good day's work done!\"||\"Who's the bailiff?\" you ask.||\"He's the one who runs the manor for Sir Quentin, the knight who calls himself lord around here.\"||The bailiff looks at you with curiosity as he approaches.||\"So, Tom,\" he says, pointing at you, \"you're doing well enough now to hire a landless laborer!\"||\"And why shouldn't I?\" says Tom. \"No serf am I, anymore. I don't work for Sir Quentin. I'm a free yeoman, I am! I won my freedom fighting for the king at Crecy.\"||\"Yes, I know, Tom. \"We're all very proud of you. But Sir Quentin's fields need ploughing, too, and your family has always done it for him. Take your ox and your new worker and spend the rest of the day there.\" The bailiff turns and walks away.">
+
 <ROOM STORY013
 	(DESC "013")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT013)
+	(CONTINUE STORY014)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT014 "Tom picks up a clod of dirt and starts to throw it at the bailiff. You grab his hand to stop him.||\"He can't command me like that!\" Tom growls. \"If Sir Quentin wants me to work his fields instead of my own, he'll have to pay me, he will. I've had quite enough of knights looking down on me. Come on. We'll show him! We'll spend the rest of the day shooting arrows.\"||You follow Tom back to his cottage. He picks up a quiver of arrows and a big bow almost as tall as he is. \"Come on!\" he says to you. \"The boys wait us down on the village green!\"||You follow him. It might be useful to learn archery, you think.||You haven't learned much about knights working here as a farmer, though. Perhaps you should have gone with the harness maker's apprentice, instead. You could sneak off and jump back in time to meet him. Should you?">
+<CONSTANT CHOICES014 <LTABLE "jump to Winchester and work for the harness maker" "stay with Tom and learn how to use a longbow">>
 
 <ROOM STORY014
 	(DESC "014")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT014)
+	(CHOICES CHOICES014)
+	(DESTINATIONS <LTABLE STORY023 STORY045>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
 <CONSTANT TEXT015 "You're sitting at the edge of the field below the walls of Windsor Castle. Knights come out of big tents topped with colored banners flying in the wind. Squires help the knights mount their horses. Queen Philippa of England and other nobles sit on a raised platform in the shade. Everyone else sits on logs or in the grass.||Trumpets blow. Drummers drum. The first event at King Edward's tournament is about to begin!||King Edward leads a team of nineteen other knights against a team of challengers led by Sir Miles Stapleton. The knights are covered in armor from head to toe. Even their horses wear armor. They form two lines facing each other, thirty yards apart.||The queen stands up and holds a handkerchief in the air.||\"Let the battle begin!\" she cries, and drops the handkerchief. When it hits the ground, the knights spur their horses on.||\"My sword, and St. George!\" they shout as they ride. You can feel the ground tremble as forty horses gallop faster and faster.">
@@ -135,40 +120,6 @@
 	(DESC "015")
 	(STORY TEXT015)
 	(CONTINUE STORY018)
-	(FLAGS TAKEBIT)>
-
-<ROOM STORY016
-	(DESC "016")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
-
-<ROOM STORY017
-	(DESC "017")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
 	(FLAGS TAKEBIT)>
 
 <CONSTANT TEXT018 "The chargers meet, right in front of you, in a crash of splintering lances and smashing bodies. Three of the horsemen are knocked completely off their saddles. Their squires run to help them up. The rest spin their horses around to charge again. And again! Soon there are only a few knights left on horseback. Squires lead the horses away, and the knights continue the combat on foot.||\"Who is your champion today, Lady Joan?\" says one of the two women sitting near you.||\"I have sworn not to tell his name,\" replies the other, a blond girl about sixteen years old. \"But he is a right chivalrous knight. I have given him y garter.\"||A garter! That's part of what you're here to find: the meaning of the message on a garter!||\"Excuse me,\" you say, \"is your knight friend a member of the Order of the Garter?\"||The women look at each other, then at you.||\"Order of the Garter? Whatever can you mean?\" says Lady Joan. \"I have given him an item of my clothing as a token of my affection. As you see, all the knights are wearing favors of the ladies they love.\"||She's right. Almost all knights have a lady's glove, veil, or garter tied around their lance or armor. But if they haven't heard of the Order of the Garter, maybe you've arrived too early in time.||\"Watch out!\" someone calls, as a pair of grappling knights almost falls on top of you. Lady Joan and her friend pick up their skirts and slip away.">
@@ -190,21 +141,12 @@
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
+<CONSTANT TEXT020 "You run into Winchester Cathedral, which is being enlarged.||Carpenters and masons are hard at work.||A hand tugs at your sleeve. \"Please, a few coins for a poor beggar?\" A raggedly dressed fellow is standing right behind you.||\"I'm a runaway apprentice. My master hit me, so I came in here for sanctuary. He can't come in here to get me, but that was three years ago! Now I can't leave the cathedral, or he'll brand me.\"||Here's someone else who sought sanctuary in the cathedral! According to medieval law, you're safe inside the cathedral -- but only if you don't go out again. Lucky you don't have to stay. You find a quiet chapel, to jump in time. Where to?||There were lots of knights in the prince's procession, you remember. Why not try to talk with them?">
+
 <ROOM STORY020
 	(DESC "020")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT020)
+	(CONTINUE STORY034)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY021
