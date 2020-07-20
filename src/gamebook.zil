@@ -58,6 +58,7 @@
     (FLAGS TAKEBIT NDESCBIT)>
 
 ; "player properties"
+<PROPDEF LDESC NONE>
 <PROPDEF LIFE-POINTS 0>
 <PROPDEF MONEY 0>
 <PROPDEF POSSESSIONS NONE>
@@ -113,7 +114,7 @@
         <RESET-STORY>
         <CHOOSE-CHARACTER>
     )>
-    <SETG HERE ,PROLOGUE>
+    <SETG HERE ,STARTING-POINT>
     <UPDATE-STATUS-LINE>
     <SETG RUN-ONCE T>
     <REPEAT ()
@@ -251,7 +252,7 @@
                 )>
             )>
         )>
-        <COND (<SPECIAL-INTERRUPT-ROUTINE .KEY> <RFALSE>)>
+        <COND (<SPECIAL-INTERRUPT-ROUTINE .KEY> <RETURN>)>
         <COND (<EQUAL? .KEY !\c !\C !\g !\G !\i !\I !\q !\Q !\h !\H !\?> <CRLF> <RETURN>)>
     >
     <RETURN .KEY>>

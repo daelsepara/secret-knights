@@ -1,5 +1,7 @@
 <INSERT-FILE "numbers">
 
+<GLOBAL STARTING-POINT STORY001>
+
 <GLOBAL CHARACTERS-ENABLED F>
 
 <CONSTANT BAD-ENDING "You have failed in your mission.">
@@ -14,6 +16,8 @@
 <CONSTANT DATAFILES-KEY !\f>
 
 <ROUTINE SPECIAL-INTERRUPT-ROUTINE (KEY)
+	<COND (<EQUAL? .KEY DATABANKS-KEY-CAPS DATABANKS-KEY> <DATA-BANK> <PRESS-A-KEY> <RTRUE>)>
+	<COND (<EQUAL? .KEY DATAFILES-KEY-CAPS DATAFILES-KEY> <DATA-FILE ,HERE> <PRESS-A-KEY> <RTRUE>)>
 	<RFALSE>>
 
 <ROUTINE RESET-OBJECTS ()
@@ -24,77 +28,20 @@
 
 <CONSTANT BLANK "This story has not been written yet.">
 
-<ROOM PROLOGUE
-	(IN ROOMS)
-	(DESC "PROLOGUE")
-	(FLAGS LIGHTBIT)>
+<CONSTANT TEXT001 "You're standing on a dirt road lined with trees near Windsor, England. It's April 28, 1344. In the distance you can see a castle on a hill, with giant tents on the fields below.||You can hear the sound of galloping hooves coming up behind you.||You spin around. A big horse rears back on its hind legs. Its front hooves kick wildly in the air.||\"Easy, Bizan!\" says its rider. He's dressed like a knight!||The horse neighs and snorts with a surprise at your sudden appearance. You jump out of the way, but the panicked horse throws the knight into the weeds by the side of the road.||\"Oof!\" says the knight. His heavy armor makes a clanking sound as he falls flat on his back. On the road behind him, a boy leading a horse turns and runs away. The two horses trot off to graze in a field.||\"Squire!\" calls the knight in a weak voice. \"Squire Randall! Where is that boy?\"||You walk over to the knight. \"May I help you, sir?\" you say.">
 
 <ROOM STORY001
 	(DESC "001")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT001)
+	(CONTINUE STORY003)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY002
-	(DESC "002")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT003 "\"By all the blessed saints' toenails! Yes!\"||You pull him to his feet. The armor clicks and clanks as the knight moves. \"Nothing broken, thanks be to the Blessed One,\" he says. \"And thanks be to you, my young friend. Tell me -- did you see the wizard?\"||\"Uh, no,\" you say. \"What wizard?\"||\"As I rode, a magnificent wizard, with wings of purple, appeared in my path. My horse leaped like he had seen a demon! I could not see the wizard well, because the visor in my helmet is very narrow. But I tell you, it was amazing!\"||A wizard? Demon? What's amazing, you think as you help the knight catch the horses, is his imagination. That was you on the road -- and you don't have purple wings!||\"This is a sign of bad luck,\" continues the knight as he leads his horse back to the road. \"For such a thing to happen on my first practice ride of the day, ill fate must await me at King Edward's tournament. Are you going to watch us fight?\"||A tournament! There will be many knights there, perhaps including some who wear the garter. You tell him yes.||\"Come with me, then,\" says the knight. \"My name is Sir Cuthbert.\"||\"Don't do it, Sir Cuthbert!\" a  voice cries. A boy about fourteen years old jumps out form behind a tree.||\"So there you are,\" shouts Sir Cuthbert, \"you lazy, cowardly good-for-nothing! Squire Randall, why hide you there?\"||\"I too beheld the wizard,\" says Randall. \"It looked just as you have said. But swiftly it transformed itself, with evil magic -- into this creature here!\" He points an accusing finger at you.||Sir Cuthbert looks at you a moment. Then he scowls and hits his squire on the ear. \"Enough of your lies, scoundrel! Where were you to help me rise? I had to accept the aid of a kind stranger. And now you accuse this same kind person of witchcraft! You dare call yourself my squire? Someday I'll beat some sense into you! Come along, both of you!">
 
 <ROOM STORY003
 	(DESC "003")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
-
-<ROOM STORY004
-	(DESC "004")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT003)
+	(CONTINUE STORY015)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY005
@@ -267,21 +214,12 @@
 	(VICTORY F)
 	(FLAGS TAKEBIT)>
 
+<CONSTANT TEXT015 "You're sitting at the edge of the field below the walls of Windsor Castle. Knights come out of big tents topped with colored banners flying in the wind. Squires help the knights mount their horses. Queen Philippa of England and other nobles sit on a raised platform in the shade. Everyone else sits on logs or in the grass.||Trumpets blow. Drummers drum. The first event at King Edward's tournament is about to begin!||King Edward leads a team of nineteen other knights against a team of challengers led by Sir Miles Stapleton. The knights are covered in armor from head to toe. Even their horses wear armor. They form two lines facing each other, thirty yards apart.||The queen stands up and holds a handkerchief in the air.||\"Let the battle begin!\" she cries, and drops the handkerchief. When it hits the ground, the knights spur their horses on.||\"My sword, and St. George!\" they shout as they ride. You can feel the ground tremble as forty horses gallop faster and faster.">
+
 <ROOM STORY015
 	(DESC "015")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT015)
+	(CONTINUE STORY018)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY016
@@ -318,38 +256,23 @@
 	(VICTORY F)
 	(FLAGS TAKEBIT)>
 
+<CONSTANT TEXT018 "The chargers meet, right in front of you, in a crash of splintering lances and smashing bodies. Three of the horsemen are knocked completely off their saddles. Their squires run to help them up. The rest spin their horses around to charge again. And again! Soon there are only a few knights left on horseback. Squires lead the horses away, and the knights continue the combat on foot.||\"Who is your champion today, Lady Joan?\" says one of the two women sitting near you.||\"I have sworn not to tell his name,\" replies the other, a blond girl about sixteen years old. \"But he is a right chivalrous knight. I have given him y garter.\"||A garter! That's part of what you're here to find: the meaning of the message on a garter!||\"Excuse me,\" you say, \"is your knight friend a member of the Order of the Garter?\"||The women look at each other, then at you.||\"Order of the Garter? Whatever can you mean?\" says Lady Joan. \"I have given him an item of my clothing as a token of my affection. As you see, all the knights are wearing favors of the ladies they love.\"||She's right. Almost all knights have a lady's glove, veil, or garter tied around their lance or armor. But if they haven't heard of the Order of the Garter, maybe you've arrived too early in time.||\"Watch out!\" someone calls, as a pair of grappling knights almost falls on top of you. Lady Joan and her friend pick up their skirts and slip away.">
+
 <ROOM STORY018
 	(DESC "018")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT018)
+	(CONTINUE STORY019)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT019 "This tournament-fighting is serious business. You decide to cross behind a tent to the other side of the field, where it looks a little safer.||\"Halt!\" a voice calls. It's Randall, the squire who saw your jump in time. He's pointing a long sword straight at you! \"You're a sorcerer, and I know it,\" he snarls. \"I challenge you to a fight!\"||\"I don't want to fight,\" you say, \"and I'm not a sorcerer.\"||\"Not only a sorcerer, but a coward!\" he sneers. \"Come on, choose your weapon. Swords or quarterstaves?\"||You know he can kill you if you try to fight with swords, so you ask for the other. But what is it?||\"Quarterstaves it is,@ he says. \"On your honor, wait right here, and I'll get them.\" He runs off.||No matter what the quarterstaves are, you think, he's bound to be trained in how to use them. You're not! The Order of the Garter doesn't exist yet, so why stay here? If you jump to the future, you won't have to face Randall when he gets back.">
+<CONSTANT CHOICES019 <LTABLE "jump five years ahead to 1349" "leap thirteen years to 1357">>
 
 <ROOM STORY019
 	(DESC "019")
-	(STORY BLANK)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT019)
+	(CHOICES CHOICES019)
+	(DESTINATIONS <LTABLE STORY027 STORY005>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY020

@@ -1,15 +1,39 @@
-<CONSTANT INSTRUCTIONS-HEADER "|ATTENTION TIME TRAVELLER!|">
-<CONSTANT INSTRUCTIONS-TEXT "Instructions for this gamebook has not been written yet.">
+<CONSTANT INSTRUCTIONS-HEADER "ATTENTION TIME TRAVELER!">
+<CONSTANT INSTRUCTIONS-TEXT "This book is your time machine. In a moment you will receive a mission, a special task that will take you to another time period. As you face the dangers of history, the Time Machine often will give you options to go or what to do.||This E-Adventure also contains a Data Bank to tell you about the age you are going to visit. This can be accessed by pressing 'D'. You can use this Data Bank to travel more safely through time. Or you can take your chances without reading it. It is up to you to decide.||A Data File is also available. It contains hints to hep you if you are not sure what choice to make. Press 'F' to access this Data File.||To complete your mission as quickly as possible you may wish to use the Data Bank and the Data File together.||There is one correct end to this Time Machine mission. You must reach it or risk being stranded in time!">
+
+<CONSTANT TIME-TRAVEL-HEADER "THE FOUR RULES OF TIME TRAVEL">
+<CONSTANT TIME-TRAVEL-TEXT "As you begin your mission, you must observe the following rules. Time Travelers who do not follow these rules risk being stranded in time.||1. You must not kill any person or animal||2. You must not try to change history. Do not leave anything from the future in the past.||3. You must not take anybody when you jump in time. Avoid disappearing in a way that scares people or makes them suspicious.||4. You must follow instructions given to you by the Time Machine.">
+<CONSTANT MISSION-HEADER "YOUR MISSION||Your mission is to become a knight, and then find out how the most famous order, or group, of English knights got its name.">
+<CONSTANT MISSION-TEXT "For six hundred years, the highest honor in England has been to be made a knight of the Order of the Garter. King Edward III began this order sometime in the 1340s. Members wear a blue garter of cloth around their sleeves, on which is written \"Honi soit qui mal y pense.\" This is the motto of the Order of the Garter.||Why did the best knights in England choose a garter as their symbol -- and what does the motto mean? The secret of the knights is hidden back in time. You must travel back six centuries to find it, but to do so you will first have to become a knight yourself!">
+
+<CONSTANT EQUIPMENT-HEADER "EQUIPMENT">
+<CONSTANT EQUIPMENT-TEXT "For your equipment, you will take with you a simple peasant's outfit. You will be wearing it when you arrive in the age of knights.">
 
 <ROUTINE INSTRUCTIONS ()
-    <HLIGHT ,H-BOLD>
-    <TELL INSTRUCTIONS-HEADER>
-    <HLIGHT 0>
+    <EMPHASIZE INSTRUCTIONS-HEADER>
     <CRLF>
     <TELL INSTRUCTIONS-TEXT>
-    <CRLF>>
+    <CRLF>
+    <EMPHASIZE MISSION-HEADER>
+    <CRLF>
+    <TELL MISSION-TEXT>
+    <CRLF>
+    <EMPHASIZE EQUIPMENT-HEADER>
+    <CRLF>    
+    <TELL EQUIPMENT-TEXT>
+    <CRLF>
+    <REPEAT ()
+        <CRLF>
+        <TELL "Begin your mission now?">
+        <COND (<YES?>
+            <EMPHASIZE "TIME TRAVEL ACTIVATED">
+            <RETURN>
+        )(ELSE
+            <DATA-BANK>
+        )>
+    >>
 
-<CONSTANT HELP-TEXT "C - Display player information (skills, items, codewords)|G - Display glossary of skills|Q - quit the game">
+<CONSTANT HELP-TEXT "D - Display Data Banks|F - Display data files|Q - quit the game">
 
 <ROUTINE DISPLAY-HELP ()
     <CRLF>
