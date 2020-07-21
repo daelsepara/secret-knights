@@ -16,7 +16,7 @@
 <CONSTANT DATAFILES-KEY !\f>
 
 <ROUTINE SPECIAL-INTERRUPT-ROUTINE (KEY)
-	<COND (<EQUAL? .KEY DATABANKS-KEY-CAPS DATABANKS-KEY> <DATA-BANK> <PRESS-A-KEY> <RTRUE>)>
+	<COND (<EQUAL? .KEY DATABANKS-KEY-CAPS DATABANKS-KEY> <CRLF> <DATA-BANK> <PRESS-A-KEY> <RTRUE>)>
 	<COND (<EQUAL? .KEY DATAFILES-KEY-CAPS DATAFILES-KEY> <COND (<DATA-FILE ,HERE> <PRESS-A-KEY> <RTRUE>)(ELSE <RFALSE>)>)>
 	<RFALSE>>
 
@@ -400,7 +400,7 @@ prince. He calls to another boy. \"This is Nigel, squire to one of my best knigh
 	(FLAGS TAKEBIT)>
 
 <ROUTINE STORY052-PRECHOICE ()
-	<EMPHASIZE "You went back 1000 years to look for King Arthur.">>
+	<EMPHASIZE "You jump back 1000 years to look for King Arthur.">>
 
 <CONSTANT TEXT053 "You're standing on the training field at Windsor with a group of other squires.||\"Here, take this lance,\" Nigel says. He's been training you for several days, but this is the first time you've used the real equipment. The lance is not as big as the long lances knights used, but it's heavy enough for you.||Nigel points at a strange T-shaped contraption. A target hangs from one end of the T, and a bag of sand from the other.||\"That's a quintain,\" Nigel says. \"We use it to practice our aim. Hold the lance steady, and keep it pointed at the middle of the target. If you don't hit it right in the middle, watch out!\"||\"Watch out for what?\" you ask.||\"You'll find out!\" The other squires laugh.||You grip the lance tightly and run down the field. The point of the lance wobbles as you run. You hit the target a little to the left of center.||WHAM! The pole spins around, and the bag of sand smacks you in the back of the head! You go sprawling on the ground.||Everyone laughs.||You pick yourself up and laugh along with them.">
 
@@ -617,209 +617,60 @@ jump through a dark doorway to hide.||You've jumped into a steaming hot pool!||\
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY081
-	(DESC "081")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT082 "You're standing outside the town of Hennebonne, on the seacoast of Brittany, in northern France. The town is built like a castle, with high walls all around it.||Walking toward the town, you hear a whizzing sound. An arrow hits the ground in front of you! A guard on top of the walls just shot it, as a warning.||\"Where did you come from?\" he shouts. \"What do you want?\"||\"I'm ... from England,\" you shout.||\"England!\" He turns to shout to another guard. \"A messenger from our English allies has arrived. Open the gates!\"||The big iron gate is pulled up a crack, and you squeeze under it. They slam the gate behind you, and draw a bolt across it the size of a tree trunk.||\"This way,\" the guard says. \"Countess Jannedik wants to see you. Hurry! The French army is about to attack us again.\"||He must be taking you to see the Countess of Brittany, you decide. She's the person Sir Walter de Manny was coming to help. You wonder if he's arrived yet.||Men and women run everywhere through the streets and across the walls of the town. You see a woman in full battle-armor riding a big warhorse, directing the preparations for battle.">
 
 <ROOM STORY082
 	(DESC "082")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT082)
+	(CONTINUE STORY083)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT083 "\"Women of Brittany!\" she shouts. \"We must all prepare for battle!\"||The guard pulls you up next to her horse. \"Here is a messenger from England, my lady,\" he says.||\"Well,\" she says to you, \"What news from our English allies? Is King Edward sending help?\"||\"I'm not really a messenger,\" you say, \"but I know that Sir Walter de Manny is on his way to help you.\"||Countess Jannedik jumps down from her horse. She grabs your hands. \"Sir Walter!\" she smiles. \"The Lord be praised. Come.\"||You follow her up a steep flight of stone steps. She takes you to the highest turret of the castle.||Countess Jannedik peers out. \"We've been holding off the attackers for weeks, but sooner or later their catapults will knock down our walls. Look -- here they come again!\"||You see an army approaching from the east.||\"We need all the help we can get,\" Countess Jannedik says to you. \"Please stay and help us defend ourselves.\"||She turns to command her soldiers. \"Archers! Shoot at the ones with the catapults!\" She goes off to direct the battle.||The army stops and lines up for battle. You hear a trumpet blow. Then the army runs forward, screaming a terrible war cry. Foot soldiers run up to the walls, carrying long wooden ladders.">
 
 <ROOM STORY083
 	(DESC "083")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT083)
+	(CONTINUE STORY086)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY084
-	(DESC "084")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
-
-<ROOM STORY085
-	(DESC "085")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT086 "The soldiers scream as the women on the walls pour boiling tar down on top of them. They fall off their ladders and lie groaning on the ground.||Arrows come whistling through the air. A woman screams, hit by an arrow. She tumbles over the edge. This sort of warfare can be pretty gruesome!||Soldiers pick up one of the big rocks. They place the rock on the back of a long bar on the giant catapult. They crank the long bar down with ropes.||A knight slices the rope in two. The bar snaps back, sending the rock flying toward the walls.||It's flying straight at you! You jump down a flight of stairs. The rock whistles past and smashes through a window of the building behind you.||The defenders of Hennebonne have a tough job ahead of them. Should you stay and help the Countess of Brittany? You'd find more knights if you left, jumping ahead to the battle of Crecy.">
+<CONSTANT CHOICES086 <LTABLE "stay and help the countess" "jump ahead to Crecy, 1346">>
 
 <ROOM STORY086
 	(DESC "086")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT086)
+	(CHOICES CHOICES086)
+	(DESTINATIONS <LTABLE STORY093 STORY087>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT087 "You're walking across a field near Crecy, France, toward an approaching army.||\"You, peasant!\" shouts a knight on horseback.||\"Everyone must help defend France,\" he tells you. \"You're drafted. Help those archers carry their arrows.\"||Now you're part of the French army! Blue banners with gold lilies on them flutter overhead -- the symbol of the French kings. But how will you get to talk to the English king, Edward, if you're part of the enemy army? Only Edward knows what the motto on the garter means.||Well, for now you have no choice but to stick it out. You carry a load of arrows for the crossbowmen. They're paid professional fighters, using a heavy, elaborate sort of mechanical bow which they have to wind up.||\"This is madness,\" one of the archers grumbles. \"We march for eighteen miles, our bowstrings get wet in the rain, the whole army is completely disorganized, and already it is the middle of the afternoon! Do they want us to shoot arrows in the dark? Why don't we stop, and fight tomorrow?\"">
 
 <ROOM STORY087
 	(DESC "087")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT087)
+	(CONTINUE STORY090)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY088
-	(DESC "088")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
-
-<ROOM STORY089
-	(DESC "089")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT090 "\"It's these foolish French knights,\" says another. \"They think the English will be easy to beat. They cannot wait for the glory.\"||You can see that they're right. The French army is disorganized. Its all spread out in a line stretching for miles, while the English army is concentrated and waiting at the top of the hill.||The French knights behind you are confident, though. \"Look at those English,\" one of them says scornfully, \"standing there on the hill. Where are their horses? What kind of knight would choose to fight on foot?\"||\"You, archers!\" shouts a knight from atop his horse. \"You go first. Turn left when you get to the bottom. Then we knights will charge up the hill, and show these English cowards how to fight!\"||The archers get their crossbows ready. \"We're in range!\" shouts their leader. The crossbowmen fire off a round of arrows. Then They spring back the handles of their machines, press on levers with their feet to draw the bows, and get new arrows ready.||Suddenly, the air is filled with arrows coming the other way! Arrows zip into the ground all around you.">
 
 <ROOM STORY090
 	(DESC "090")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT090)
+	(CONTINUE STORY092)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY091
-	(DESC "091")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT092 "\"AARGH!\" A crossbowman next to you drops his bow and screams as an arrow goes through his neck. You grab his shield and hide behind it.||\"The English arrows, they fall like snow!\" another archer shouts. \"They do not stop!\"||The English longbow must be five times faster than the crossbow. The shield you're crouching behind is beginning to look like a pincushion!||\"This is too much,\" shouts the archer leader. But there's no place to run! Behind you is a line of knights on horseback.||\"Cowards!\" they yell at the archers. \"Run away, will you? Run the varlets down!\"||This is horrible! The knights trample down the frightened archers, part of their own army. They even swing their swords, killing their own men so they can charge up the hill at the English!||\"Out of the way,\" a knight screams at you. \"Let the real fighters through!\" He raises his sword. You duck.||The sword never swings. You look up. An English arrow has gone right though the French knight's helmet. He tumbles off his horse.||Time to get out of here! Jump in time. Where? As far away as possible! Is there someone besides Edward who might know about the motto? Forget about finding King Edward -- you'll look for King Arthur instead!">
 
 <ROOM STORY092
 	(DESC "092")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT092)
+	(PRECHOICE STORY092-PRECHOICE)
+	(CONTINUE STORY080)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY092-PRECHOICE ()
+	<EMPHASIZE "You went back 1000 years.">>
 
 <ROOM STORY093
 	(DESC "093")
