@@ -4,33 +4,46 @@ This is a ZIL Implementation of **Secret of the Knights** game book (Time Machin
 
 | **Cover art** | **Back cover blurb**|
 |:-:|:-:|
-|![Cover Art](/images/dead-men.png)|Adrift at sea in an open boat, you make your desperate bid to escape from the evil pirate Skarvench. The odds are stacked against you, for, even if you do not die of thirst, there are still formidable dangers to overcome. And if you do survive to reach civilization, your adventure is only just beginning since you must round up a crew and sail in search of Skarvench and avenge his tyranny. But will you be able to thwart his most evil and blackguardly scheme ever: to kidnap the beautiful young Queen of Glorianne?|
-| |Not luck but judgement!|
-| |*Virtual Reality Adventure Books are a new generation of interactive fiction. This unique non-random game system makes the choices all yours. There are no dice to roll, no lengthy rules to learn. All you need is the spark of your own imagination!*|
-| |*Cover illustration by Fred Gambino|
+|![Cover Art](/images/secret-knights.jpg)|**IT IS THE YEAR 1340.** |
+| |*You have traveled back to the age of knights.*|
+|-|-|
+| |A squire has just accused you of being a sorcerer. You must prove yourself in a duel with quarterstaves, *but you've never used them before.*  You can try to defend yourself or escape through the angry crowd. Your decision can lead you to safety or leave you stranded in time!|
+| |ARE YOU READY TO FACE THE DANGER?|
+| |*Cover painting by Richard Hescox|
 
 ## Additional Copyright Information 
 
 ```
-Published 1993 by Mammoth an imprint of Reed Consumer Books Limited
-Michelin Home, 81 Fulham Road, London SW3 6RB and Auckland, Melbourne, Singapore and Toronto
+SECRET OF THE KNIGHTS
+A bantam Book/February 1984
 
-Text copyright (c) 1993 Dave Morris and Mark Smith
-Illustrations and map copyright (c) 1993 Leo Hartas
+Special thanks to Judy Gitenstein, Ann Weil, Ron Buehl, Anne Greenberg, Nancy Pines, David Harris, and Lucy Salvino.
 
-ISBN 0 7497 1485 9
+Book design by Alex Jay.
+Cover painting by Richard Hescox.
+Cover design by Alex Jay.
+Mechanicals by Susan Leung and Studio J.
+Typesetting by Graphic/Data Services
+
+"Time Machine" is a trademark of Byron
+Preiss Visual Productions, Inc.
+
+All rightss reserved.
+Copyright (c) 1984  Bypron Preiss
+Visual Publications, Inc.
+
+ISBN 0-553-23601-6
 ```
 
 ## Notes about ZIL version
 
-- No in-game illustrations or graphics (also excludes map from the book)
-- Character selection and inventory of items and codewords are implemented
-- Some changes to the text were made: spelling errors/consistency, some were rephrased to fit the "digital" format or the implemented mechanisms 
-- Select an action by pressing the number keys that correspond to the option (**1** - **9**). If there are more than 9 options, items 10-15 map to the keys **A** (or **a**) - **F** (or **f**)
+- No in-game illustrations or graphics
+- Select an action by pressing the number keys that correspond to the option (**1** - **2**).
 - Press **q** or **Q** during action selection to quit or terminate the program
-- Press **c** or **C** during action selection to view character (items, skills, codewords)
-- Press **g** or **G** during action selection to view skills glossary
-- Press **h** or **H** or **?** during action selection lists the commands **G**/**C**/**Q** and what each does 
+- Press **a** or **A** during action selection to view information about the contributors
+- Press **d** or **D** during action selection to view Data Bank
+- Press **f** or **F** during action selection to view Data File (hints)
+- Press **h** or **H** or **?** during action selection lists the commands **A**/**D**/**F**/**Q** and what each does 
 
 ## Bugs
 
