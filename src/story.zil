@@ -555,123 +555,66 @@ yourself?">
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
+<CONSTANT TEXT074 "It's August 26, 1346. You're standing at the bottom of a grass-covered hill near the town of Crecy, France. An army of knights, archers, and foot soldiers waits at the top of the hill, while another army approaches across a field.||You can see big banners fluttering in the wind. The banners of the advancing army are blue, with yellow flower designs on them. The banners at the top of the hill are divided in four squares. Two of the squares have the same flower design; the others are red with what looks like golden lions on them.||One of these armies must be Edward and the English, and the other the French. Which should you join?">
+<CONSTANT CHOICES074 <LTABLE "join the army on top of the hill" "join the army crossing the field">>
+
 <ROOM STORY074
 	(DESC "074")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT074)
+	(CHOICES CHOICES074)
+	(DESTINATIONS <LTABLE STORY094 STORY087>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT075 "You're standing near a river by a town of thatched-roof houses. There's a crowd of people coming your way, pulling something over a row of logs with long ropes.||\"Heave!\" shouts a guard, cracking a whip on the backs of the people pulling the ropes. You walk forward to see what it is they're dragging.||It's a ship! A long wooden ship, pointed at both ends.|||\"You!\" shouts a man with a spear. \"You're not a Saxon!\" He pulls you over to the ship, and puts you to work pulling with the others. A whip cracks across your back.||\"Heave!\"||Next to you is a man with a tattoo on his cheek.||\"What's going on?\" you ask him.||\"The Saxons are burying one of their kings,\" he mutters as he pulls. \"They put all his weapons and jewels and magic powders in a ship with his body. They've made us dig a big hole, and now were pulling the whole boat there to bury it!\"">
 
 <ROOM STORY075
 	(DESC "075")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT075)
+	(CONTINUE STORY076)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT076 "\"Stop talking and pull, Welshman!\" shouts the guard.||You keep quiet and pull.||\"You're Welsh?\" you ask the man when the guard goes away.||\"I'm a Briton!\" he says, \"and proud of it! 'Welsh' is what the Saxons call 'foreigners'. For fifty years now the Anglo-Saxons have ruled here, but some day Arthur will come to lead the Britons once again!\"||Ow! The guards whip smacks across your back. Boy, does that sting!||Enough is enough! You run straight at the guard. He's surprised, caught off balance, and you knock him down. You keep running, heading for the forest where you won't be seen jumping in time.||You've been searching for Arthur, to ask him about King Edward's motto. But the man with the tattoo hoped Arthur would come again.... Of course! If Arthur lived at the end of the fifth century, that would mean the end of the 400s and beginning of the 500s. The 500s are the sixth century.">
 
 <ROOM STORY076
 	(DESC "076")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT076)
+	(PRECHOICE STORY076-PRECHOICE)
+	(CONTINUE STORY065)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY077
-	(DESC "077")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<ROUTINE STORY076-PRECHOICE ()
+	<EMPHASIZE "You jumped back to A.D. 490.">>
+
+<CONSTANT TEXT078 "You're sitting on a stool in a big one-room log house. Artorius, the leader of the Briton army, sits joking and drinking with his friends while a bard chants a poem. You don't know anything about being a bard, but you're the next performer!||You suspect that Artorius may be the real King Arthur! The two names are similar. Arthur was a Briton, and he was famous for winning battles against the invading Anglo-Saxons. If Artorius and Arthur are the same person, maybe he can tell you what the motto \"Evil to those who think evil of it\" means!">
 
 <ROOM STORY078
 	(DESC "078")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT078)
+	(CONTINUE STORY079)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT079 "You listen to the bard chant a story about an old king named Geraint. Every once in a while he strums a couple of chords on a strange-looking little harp.||Men went to Catraeth, they were well renowned|From golden cups their mead they downed|For a year and a day they drank their fill|And then with a cry they charged up hill.|But of all who fought in that battle long|Only I came back, to sing this song.|Alas!||The bard finishes his story, and passes his harp to you.||\"Good luck to you, whatever you sing,\" he whispers. \"They're drunk as pigs and laugh at anything! Give them a song about a great king.\"||You pluck the strings of the harp. Everyone quiets down to listen to you.||You don't really have to play well, just sing and perform. But what words? What could you chant about that would help you on your mission?">
+<CONSTANT CHOICES079 <LTABLE "chant about a king" "jump ahead 850 years and return to Edward's time">>
 
 <ROOM STORY079
 	(DESC "079")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT079)
+	(CHOICES CHOICES079)
+	(DESTINATIONS <LTABLE STORY068 STORY061>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT080 "You're standing in a small courtyard lined with white marble columns. You've traveled back a thousand years! Its A.D. 340.||You hear voices. Two men come your way, dressed in togas.||Togas! Where are you? This doesn't look like Britain at all. You
+jump through a dark doorway to hide.||You've jumped into a steaming hot pool!||\"You! Come out of there, now!\"||A man pokes a spear at you through the doorway. He wears a strange, curved helmet.||\"This bath is reserved for Roman legionnaires!\" he yells. \"No Britons allowed!\"||That explains it. You've come too far back, to the time when Britain was a colony of the Roman Empire! You swim to a corner of the pool where the guard can't see you.||You relax a bit in the warm mineral water and prepare to jump in time. You're looking for King Arthur, to see if the motto started with him, but you'll have to jump ahead in time to find him.">
+<CONSTANT CHOICES080 <LTABLE "jump ahead 150 years to A.D. 490" "ahead 250 years to A.D. 590">>
 
 <ROOM STORY080
 	(DESC "080")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT080)
+	(CHOICES CHOICES080)
+	(DESTINATIONS <LTABLE STORY065 STORY075>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY081
