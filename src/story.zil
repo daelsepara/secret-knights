@@ -98,7 +98,7 @@
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
-<CONSTANT TEXT013 "You're walking in a field under the hot sun. Tom, your yeoman-farmer friend, walks up ahead. He steers a wooden plough pulled along by an ox. The plough rips through a long groove called a furrow through the soil.||A basket full of seeds hangs from your neck. You dip your hand in the basket and plant seeds in the furrow as you walk along.||\"Yeoman Tom!\" shouts a man by the edge of the road.||Tom pulls on the oxøs reign to make it stop. \"Bah!\" he says. \"Here comes the bailiff. Just when I thought we'd get a good day's work done!\"||\"Who's the bailiff?\" you ask.||\"He's the one who runs the manor for Sir Quentin, the knight who calls himself lord around here.\"||The bailiff looks at you with curiosity as he approaches.||\"So, Tom,\" he says, pointing at you, \"you're doing well enough now to hire a landless laborer!\"||\"And why shouldn't I?\" says Tom. \"No serf am I, anymore. I don't work for Sir Quentin. I'm a free yeoman, I am! I won my freedom fighting for the king at Crecy.\"||\"Yes, I know, Tom. \"We're all very proud of you. But Sir Quentin's fields need ploughing, too, and your family has always done it for him. Take your ox and your new worker and spend the rest of the day there.\" The bailiff turns and walks away.">
+<CONSTANT TEXT013 "You're walking in a field under the hot sun. Tom, your yeoman-farmer friend, walks up ahead. He steers a wooden plough pulled along by an ox. The plough rips through a long groove called a furrow through the soil.||A basket full of seeds hangs from your neck. You dip your hand in the basket and plant seeds in the furrow as you walk along.||\"Yeoman Tom!\" shouts a man by the edge of the road.||Tom pulls on the ox's reins to make it stop. \"Bah!\" he says. \"Here comes the bailiff. Just when I thought we'd get a good day's work done!\"||\"Who's the bailiff?\" you ask.||\"He's the one who runs the manor for Sir Quentin, the knight who calls himself lord around here.\"||The bailiff looks at you with curiosity as he approaches.||\"So, Tom,\" he says, pointing at you, \"you're doing well enough now to hire a landless laborer!\"||\"And why shouldn't I?\" says Tom. \"No serf am I, anymore. I don't work for Sir Quentin. I'm a free yeoman, I am! I won my freedom fighting for the king at Crecy.\"||\"Yes, I know, Tom. \"We're all very proud of you. But Sir Quentin's fields need ploughing, too, and your family has always done it for him. Take your ox and your new worker and spend the rest of the day there.\" The bailiff turns and walks away.">
 
 <ROOM STORY013
 	(DESC "013")
@@ -457,225 +457,102 @@ yourself?">
 	(CONTINUE STORY057)
 	(FLAGS TAKEBIT)>
 
+<CONSTANT TEXT061 "You're standing among the big tents on the tournament field below Windsor castle. Its April 30, 1344 -- two days after you first were here.||\"You, there!\" someone calls. It's Sir Cuthbert, the knight you met when you first arrived! He stands at the door to one of the tents, in the padded underclothes knights wear between their skin and their armor.||\"Have you seen my lazy squire?\" he asks. \"If I don't get my armor on, I'll be late for the tournament! Do you know about armor?\"||\"Sure,\" you say, \"I know all about it.\" Your week at the harness maker's shop is coming in handy after all. You help Sir Cuthbert into his armor and go with him to fetch his horse. Here you are acting in the place of a squire -- you're on your way to becoming a knight!||\"Do you see that knight over there with the blue cross on his shield?\" says Sir Cuthbert as you help him mount his horse. \"He's a French knight, called Sir Guy. He knocked me from my horse the last time we met. I swear on my sword, I will never cut my hair or take a bath until I vanquish him! Now, hand me my lance.\"||The long lance is so heavy you can barely carry it. Sir Cuthbert props it on his arm and joins the knights.">
+
 <ROOM STORY061
 	(DESC "061")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT061)
+	(CONTINUE STORY063)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY062
-	(DESC "062")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT063 "The queen signals for the fighting to begin, and the crowd cheers. Sir Cuthbert gallops forward, pointing his lance at the French knight's shield.||CRAA-ACK! Sir Cuthbert's lance hits the shield head on, but splits in two! The French knight is knocked out of his saddle, but he stays on his horse.||They swing around to try again. This time, the French knight hits Sir Cuthbert on the helmet with his sword, and he tumbles off his horse.||You run out into the middle of the fighting and help Sir Cuthbert to his feet.||\"I'm all right,\" he roars. \"Get the horse off the field!\" You grab the horse by the bridle and lead it off to the sidelines.||Sit Cuthbert and Sir Guy fight on foot. The French knight cracks sir Cuthbert's shield in two and holds his sword against Sir Cuthbert's neck.||\"Yield!\" he shouts.||Sir Cuthbert yells and struggles, but the battle is over. \"I yield,\" he finally says.||You run out on the field again and help him up. When he takes off his helmet, you see blood streaming down his face. \"Too bad,\" you say. \"But it's only a game, after all. Better luck next time.\"||He glares at you. \"Next time! That's the second good horse and harness that Frenchman has won from me.\"||The tournament game is more serious than you thought. In addition to the danger of getting hurt, the knights who lose have to give the winner their horses and armor.">
 
 <ROOM STORY063
 	(DESC "063")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT063)
+	(CONTINUE STORY064)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT064 "You hear footsteps outside the door of the tent. Randall, Sir Cuthberts squire, steps inside.||\"You!\" shouts the knight, hitting Randall with his armored hand.||\"Where have you been?\"||Randall trembles, then he sees you. \"It's this sorcerers fault! I was bewitched, so I forgot what time it was. And you were bewitched, too. That's why you lost!\"||Sir Cuthbert looks at you.||\"Two days ago,\" Randall says, \"I challenged this magician to a duel with quarterstaves. But then the sorcerer disappeared!\"||Sir Cuthbert looks skeptically at Randall. \"You've told this tale before, squire. I'm tired of it. There's a way to find out if you're right or not. Trial by duel!\"||Randall smiles. \"I have the quarterstaves right here. I'll wager this magician doesn't know how to use them!\"||\"Not so fast,\" Sir Cuthbert says, grabbing Randall by the arm. \"The suspect should be allowed to choose. Will you face my squire with quarterstaves to prove you're not a sorcerer, or shall we submit you to the authorities for trial by water?\"">
+<CONSTANT CHOICES064 <LTABLE "fight a trial by combat" "accept a trial by water">>
 
 <ROOM STORY064
 	(DESC "064")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT064)
+	(CHOICES CHOICES064)
+	(DESTINATIONS <LTABLE STORY038 STORY042>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT065 "You're wet. You're wading in a shallow river, somewhere in Britain in the year A.D. 490. The water is stained red-is it blood?||Something floating in the river bumps into you from behind. It's a body, with a spear stuck through it!||A group of men on horseback crosses the river right next to you. You dive out of the way.||\"Hold!\" shouts a soldier, pointing a spear at your chest. \"Be ye Angle, Saxon, or Briton?\"||\"None,\" you say. \"I'm a ... wanderer.\"||\"A wandering bard?\" He scratches his head. \"There's nothing else ye could be. Come with me. General Artorius will want some entertainment tonight, to celebrate the British victory over the Saxons. You will perform for him. This way!\"">
 
 <ROOM STORY065
 	(DESC "065")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT065)
+	(PRECHOICE STORY065-PRECHOICE)
+	(CONTINUE STORY078)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY065-PRECHOICE ()
+	<EMPHASIZE "You went along to visit Artorius.">>
+
+<CONSTANT TEXT066 "You hang on tight to the horse's neck as it gallops along. Nigel told you Rosalinde always returns to her stable. You hope he's right!||Your helmet is still stuck. It's scary to be riding so fast when you can't see anything! Soon, though, Rosalinde slows down.||You hear voices.||\"Good horse, Rosalinde,\" someone says. That's Nigel's voice! \"Well, did you enjoy your ride?\"||\"I would have enjoyed it better,\" you say, \"if I had been able to see!\"||He laughs and helps you down. He uses bear grease to get the helmet unstuck.||\"That's enough practice for today,\" Nigel says. \"Hurry out of that armor. Lady Joan of Kent has invited us on a hunting trip, and Sir Walter de Manny will be there.\"||Lady Joan is the young woman you met at Windsor when you first arrived in 1344, but who is Sir Walter de Manny?||\"Sir Walter must be a brave knight,\" you say.||\"Brave?\" Nigel says with a laugh. \"He's the bravest, most chivalrous knight in England. Many times he has captured an entire town with only a few knights to help him.\"||So you'll get to meet a famous knight! The closer you get to the bravest knights, you figure, the better your chances of becoming one yourself.||\"If I become a knight,\" Nigel says with determination, \"I'll be just like Sir Walter.\"||But you're a squire,\" you say as you pull your leg out of the armor. \"So someday you'll be a knight, right?\"||\"Not necessarily. Some people stay squire all their lives. I'll have to do very well as a squire, or prove my bravery on a battlefield. I've already been a squire for three years!\"||Three years! Will it take that long for you to become a knight?">
 
 <ROOM STORY066
 	(DESC "066")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT066)
+	(PRECHOICE STORY066-PRECHOICE)
+	(CONTINUE STORY070)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY067
-	(DESC "067")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<ROUTINE STORY066-PRECHOICE ()
+	<EMPHASIZE "You went hunting with a famous knight.">>
+
+<CONSTANT TEXT068 "The people in the lodge with you move restlessly.||\"Play, bard!\" roars Artorius. \"Chant the story of a great king! Now!\"||Luckily, you have an idea of what to play. You could chant something about King Arthur himself, work the motto into the words, and see what he says in response.||Oh, Arthur was a noble king,|He sat his warriors in a ring.|He said as long as they were able,|They'd be the knights of the Round Table.||Artorius takes a long swig from his mug, and wipes the foam from his beard.||\"A round table, eh?\" he says. \"Sounds like a silly idea to me. It would have square bowls on it, I suppose!\"||\"Ho ho!\" laugh his men.||What was the name of Arthur's best knight ... Lancelot?||The luckiest knight was Lancelot ...||You search desperately for a rhyme for Lancelot.||He practiced and prowled and pranced a lot.||\"Ugh,\" growls Artorius, \"this bard sings the worst rhymes I've ever heard!\"||You'd better get the motto in here soon, you think. You're running out of rhymes!">
 
 <ROOM STORY068
 	(DESC "068")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT068)
+	(CONTINUE STORY069)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT069 "King Arthur took a double drink,|And said, \"Evil to those who evil think\"!||Artorius looks puzzled. \"Evil to who? Who does what? Is there anyone here who knows what this bard is talking about?\" He looks around at his friends, who shake their heads.||\"Who was this king, anyway?\" he asks you. \"Where did he live?\"||Brother! If this is the real Arthur, he isn't much like the stories told about him. He doesn't even recognize stories about himself! He doesn't recognize the motto, either.||\"Arthur was King of England,\" you say. Artorius jumps to his feet.||\"Angle-land! This bard is telling stories about the kings of our enemies, the Angles! What nerve!\"||\"Away with the fool!\" shout the soldiers. They throw bones at you. The head of a fish hits you right on the forehead. You drop the harp and run for the door.||A crowd of laughing kids chases you into the woods. As soon as you're out of sight, you decide to jump in time. If Arthur doesn't know what the motto means, there's nothing more to find here. You'll have to go back to King Edward's time.">
 
 <ROOM STORY069
 	(DESC "069")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT069)
+	(PRECHOICE STORY069-PRECHOICE)
+	(CONTINUE STORY061)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY069-PRECHOICE ()
+	<EMPHASIZE "You jumped ahead 850 years.">>
+
+<CONSTANT TEXT070 "You're walking through an overgrown field, holding half a dozen hunting dogs by the leash. Lady Joan rides on horseback. She wears a thick leather glove that covers her arm to her elbow.||Perched on the leather glove is a big black-and-gray spotted bird. It looks like a hawk of some sort.||\"Why do you keep its head wrapped up?\" you ask. Joan smiles. \"This is a trained falcon. We will keep her hooded until we find something for her to chase.\" You watch Sir Walter de Manny.||\"This will be our last hunt together for a while,\" he says to Lady Joan. \"The king is sending me to France. The king's ally, the noble Countess of Brittany, is being attacked by the French army. I must go to her aid.\"||\"You are a true and brave knight,\" says Joan. \"When you hear of a lady in distress, off you go to help her, as the code of chivalry commands.\"||Suddenly, the dogs pull on the leashes you're holding.">
 
 <ROOM STORY070
 	(DESC "070")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT070)
+	(CONTINUE STORY072)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY071
-	(DESC "071")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT072 "\"The dogs smell something,\" says Sir Walter. \"Let them go!\" They go bounding off, barking and growling.||Joan takes the hood off the falcon's head. \"Quiet, my pretty one,\" says Joan. She gently strokes the falcon's feathers.||\"I wonder,\" says Sir Walter with a smile, \"what lucky knight's cheek the fair Lady Joan will stroke as gently as she strokes her falcon?\"||Joan blushes. \"I am in love with a knight, but I cannot tell his name. In days of old, when Lancelot joined King Arthur's Round Table, he and Queen Guinevere fell in love. They, too, kept their love a secret.\"||\"Look there!\" Nigel cries. The dogs are chasing long-necked, long-legged birds from a pond.||\"Herons!\" cries Joan. She strokes the falcon in a special way, points her curved beak toward the herons, and hurls her into the air. \"Haie!\" she shouts to the falcon. \"Haie! Haie!\"||In midair, the falcon slams into one of the herons with her claws. A spray of white feathers is knocked loose as the falcon brings the heron to the ground.||\"Help me grab the heron,\" Nigel calls to you. \"Watch out for its beak. It's as sharp as a dagger!\"||You grab the big bird's feet, while Nigel holds its beak. It bleeds a little where the falcon held it with her claws, but otherwise it seems unharmed.">
 
 <ROOM STORY072
 	(DESC "072")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT072)
+	(CONTINUE STORY073)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT073 "You carry the struggling bird to Sir Walter. He clips off the long plume of beautiful feathers at the back of its head and waves them in the air.||\"Our first bird shall be a trophy-bird,\" Sir Walter says. \"For luck, we will let it go.\" The heron flies away.||For several hours you play the same game over and over.||It will be a long time before you get to be a knight this way! Perhaps you should jump in time. It seems Froissart made an error when he told you that King Edward started the Order of the Garter here in 1344.||Edward just talked about starting a new Round Table, like the one King Arthur used to have. You heard him.||You could try jumping ahead a couple years, to see if the King has started the Order of the Garter by then. Or, if the order began with the king's plans for a new Round Table, perhaps the motto has something to do with the old Round Table. You could go back in time and ask King Arthur himself.">
+<CONSTANT CHOICES073 <LTABLE "jump back 1000 years to look for King Arthur" "jump ahead two years to 1346">>
 
 <ROOM STORY073
 	(DESC "073")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT073)
+	(CHOICES CHOICES073)
+	(DESTINATIONS <LTABLE STORY080 STORY060>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY074
