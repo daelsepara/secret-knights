@@ -382,174 +382,79 @@ prince. He calls to another boy. \"This is Nigel, squire to one of my best knigh
 <ROUTINE STORY050-PRECHOICE ()
 	<EMPHASIZE "You decide to become a squire.">>
 
+<CONSTANT TEXT051 "You decide you'd rather become a squire to a full-grown knight.||\"Sorry,\" you tell the boy. \"I have other plans.\"||The boy smiles in a strange way, and turns away.||Sir Cuthbert stares at you with astonishment. Squire Randall grins wickedly.||\"What!\" Cuthbert shouts. \"You said no to the Prince of Wales? Edward, the kings son? You're crazy!\"||Ow! Somebody hits you on the back of the head. \"On your knees, fool!\" an angry knight shouts.||\"I ... I'm sorry, you say, I didn't know!\" You look again at the tunic the boy is wearing. Of course, it has three gold leopards on it -- and leopards decorate the crest of the English kings.||\"Get out of here, idiot,\" the knights shout. They push you away. You hide in the crowd of tournament spectators. Everyone is following a tall man in armor who strides to the top of the hill. The man looks like the prince -- it must be King Edward III himself!">
+
 <ROOM STORY051
 	(DESC "051")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT051)
+	(CONTINUE TEXT052)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT052 "\"Many years ago,\" the king shouts, \"according to the stories, the glorious King Arthur used to meet on this very hill with his Knights of the Round Table.  The best knights of his kingdom would sit in a circle, so that no one knight could say that he was best because he sat at the head of the table.\"||\"We hereby swear, on our honor as a knight and king, that before four years have passed we will start a new Round Table. The best knights of our kingdom will sit with us here, in a chapel we will dedicate to the holy knight, St. George!\"||\"Hurrah!\" cry the knights and ladies. \"Hurrah for King Edward! Hurrah for the new Round Table!\"||The king's plans for the best knights of our kingdom sound like the beginnings of the Order of the Garter. The king didn't mention the garter, though. If he's starting a new Round Table, why not go back to the time of the old one to see if King Arthur knows what the motto means?||It's no use staying here, in 1344, where everyone will soon know you refused the prince's offer.">
 
 <ROOM STORY052
 	(DESC "052")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT052)
+	(PRECHOICE STORY052-PRECHOICE)
+	(CONTINUE STORY080)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY052-PRECHOICE ()
+	<EMPHASIZE "You went back 1000 years to look for King Arthur.">>
+
+<CONSTANT TEXT053 "You're standing on the training field at Windsor with a group of other squires.||\"Here, take this lance,\" Nigel says. He's been training you for several days, but this is the first time you've used the real equipment. The lance is not as big as the long lances knights used, but it's heavy enough for you.||Nigel points at a strange T-shaped contraption. A target hangs from one end of the T, and a bag of sand from the other.||\"That's a quintain,\" Nigel says. \"We use it to practice our aim. Hold the lance steady, and keep it pointed at the middle of the target. If you don't hit it right in the middle, watch out!\"||\"Watch out for what?\" you ask.||\"You'll find out!\" The other squires laugh.||You grip the lance tightly and run down the field. The point of the lance wobbles as you run. You hit the target a little to the left of center.||WHAM! The pole spins around, and the bag of sand smacks you in the back of the head! You go sprawling on the ground.||Everyone laughs.||You pick yourself up and laugh along with them.">
 
 <ROOM STORY053
 	(DESC "053")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT053)
+	(CONTINUE STORY054)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT054 "\"Let me try that again!\" you say.||\"That's the spirit,\" says Nigel. \"A brave knight never gives up!\"||You try it over and over again. The back of your head hurts from being hit so often with the sandbag, but your aim is getting better.||\"Lets try on armor next,\" says Nigel. \"You're about my size, so my armor should fit you.\"||Here's your chance to feel what it's like to have armor on! You slip your legs into the leg pieces and fit the breastplate on over your head. The arms are next, and finally the helmet.||You peer out at the world through the narrow helmet slit. You take a few steps, laughing at the clanking sound you make.||\"Try getting up on a horse,\" Nigel says. He leads over a gray-and-white mare. \"This is Rosalinde. Don't worry, she's a gentle horse. She always comes back to her stable eventually.\"||It's hard to get up on the horse while wearing the heavy armor.||Nigel gives you a push, and you almost fall off the other side! Your helmet twists around. Now you can't see anything at all. You try to twist it back, but it won't move.">
 
 <ROOM STORY054
 	(DESC "054")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT054)
+	(CONTINUE STORY056)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY055
-	(DESC "055")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT056 "\"What's wrong?\" Nigel asks from below.||\"My helmet's stuck!\"||\"Hey!\"  someone shouts. \"Randall! What are you doing?\"||Suddenly, your horse gives a whinny and gallops off. Randall must have scared it somehow!||You grab on tight to the horse's neck. The armor clanks and pinches as you bounce up and down. The horse is running at top speed!||\"Watch where you're going, fool!\" someone shouts.||\"Sorry!\" you call. There must be people watching your wild ride -- but you can't watch where you're going. You can't even see!||\"Rosalinde!\" you call. \"Slow down!\" The horse gallops on.||Maybe you should jump in time. You could stay right here, but jump ahead a few minutes. Once you've disappeared out from inside this armor, you could catch the horse and walk it back.">
+<CONSTANT CHOICES056 <LTABLE "jump ahead five minutes in time" "stay on the galloping horse">>
 
 <ROOM STORY056
 	(DESC "056")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT056)
+	(CHOICES CHOICES056)
+	(DESTINATIONS <LTABLE STORY032 STORY066>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT057 "\"Watch out!\" Alison shouts. She pulls you out of the way, just as a horse races through the crowd. The horse pulls a cart driven by a laughing, drunken man.||\"You'll rot in hell, carter!\" Alison screams at him.||\"Now,\" she says sweetly, \"when you meet the king, you must be polite as a courtier. You must speak to him only when he speaks to you, understand?\"||\"All right,\" you say, as you enter a church full of dancing people. Just below the altar is a large wooden throne.||\"Your majesty,\" Alison says, \"a loyal subject wishes to ask you a question.\"||A nearly toothless one-eyed man sits grinning on the throne. His crown is tilted to one side, and he's hiccuping.||\"Hic! Arise, my loyal subject,\" he says. He takes a big gulp of wine. \"Off with their heads! Off with their shoes!\"||Edward III is tall and blond, like the prince. Who is this, then?">
 
 <ROOM STORY057
 	(DESC "057")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT057)
+	(CONTINUE STORY058)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT058 "\"What kind of a king are you?\" you ask.||\"I? Hic! I am the Lord of Misrule. The King (hic) of Fools! My kingdom comes once a year, at Christmastime.\"||You hear a screech of laughter behind you. Alison is laughing so hard that tears run down her face.||\"Wanted to meet the king, did ye? Ha ha! Well, here he is! Dear King Edward is still fighting his wars in France, so you'll have to make do with the King of Fools! Hoo hoo hoo!\"||Well, you think as you sneak away, so King Edward isn't even in the country! He's in France. And Sir Walter de Manny, the most famous knight you've met yet, went to Brittany, which is also in France. If all the knights are going there, why not go to France
+yourself?">
+<CONSTANT CHOICES058 <LTABLE "jump back a few months to find Edward at the battle of Crecy" "jump back a little further in time to find Sir Walter de Manny in Brittany">>
 
 <ROOM STORY058
 	(DESC "058")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT058)
+	(CHOICES CHOICES058)
+	(DESTINATIONS <LTABLE STORY074 STORY082>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY059
-	(DESC "059")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT060 "You're standing in the streets of Windsor, late in the year 1346. Light snow lies on the ground, and music fills the air. People are dancing in the streets, spinning round and round with mistletoe and handkerchiefs swinging in their hands.||A big, red-faced woman says to you, \"I've never seen you before, sweets.||\"Why have you come here?\"||\"I'm looking for the king,\" you say.||\"The king!\" the woman grins. She has a gap between her two front teeth. \"Well, now, this is your lucky day! I'm Alison, the fish-wife. I happen to know the king very well, I do! Come along, love, come along! I'll introduce you!\"||Could this woman really know the king? That would be lucky, if it were true. Only the king or prince can make you a knight, and King Edward, if anyone, must know what the motto on the garter means.||What kind of king will she come up with? You're curious and let her pull you along.">
 
 <ROOM STORY060
 	(DESC "060")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT060)
+	(CONTINUE STORY057)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY061
