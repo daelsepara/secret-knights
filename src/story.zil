@@ -743,174 +743,77 @@ replaced by rows of bows and arrows. This must be where the archers will fight.|
 <ROUTINE STORY102-PRECHOICE ()
 	<EMPHASIZE "You traveled ahead two years to the battle of Crecy.">>
 
-<ROOM STORY103
-	(DESC "103")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT104 "You run from the battle toward the part of the army held in reserve. You wonder if you made the right choice. You forgot to deliver the king's message. Not only that, but if part of your mission is to become a knight, why are you running away from danger? Above all, a knight must be brave!||An armored fist pinches your shoulder.
+\"What goes on up there?\" growls the knight who holds you.||\"A few French knights have gotten through, but the prince is fighting them,\" you say.||\"Did you see a French knight with a blue cross on his shield?\"||\"No,\" you say. You try to pull away from this smelly knight, but he holds you tight.||\"Have you heard mention of a knight named Sir Guy?\" he
+growls. His eyes are fierce beneath his hairy face. \"Two years ago, I swore a sacred oath. I swore I would never take a bath, nor cut my hair, until I beat that knight!\"||You look closer at him. It's Sir Cuthbert, the knight you met at Windsor! He doesn't seem to recognize you. It's hard to recognize him, too -- he certainly smells like it's been two years since he took a bath!">
 
 <ROOM STORY104
 	(DESC "104")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT104)
+	(CONTINUE STORY105)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT105 "\"Sorry,\" you say. He lets you go. Time to make yourself scarce, you think. If Sir Cuthbert is here, that nasty squire of his must be, too! Should you jump in time? But where? You're in France, where Sir Walter de Manny was supposed to come to aid the Countess of Brittany. Perhaps you could go help him, to prove you're fit to be a knight.||\"Aha!\" You hear somebody calling you.||Oh no, it's Squire Randall! This time its not a quarterstaff he is pointing at you but a sharp steel sword!||\"Who are you, really?\" he sneers. \"You appear for a few days, then disappear for years, without a trace! Where do you really come from?\"||\"I'm from ... Navarre,\" you say.||\"Oh, really?\" he says with a smirk. He calls to another squire. \"Carlos! You're from Navarre, right? Come here a moment.\"||A squire with dark curly hair comes up.||\"This creature claims to be from Navarre, too,\" says Randall. \"Is he?\"||Carlos smiles. \"A countryman! What a pleasure! How are things back in Pamplona?\"||\"Uh, fine,\" you say.||\"How is King Theobald?\"||\"Well ... as well as could be expected.\"||Carlos's smile turns into a scowl. \"This is a faker, Randall. King Theobald has been dead for years!\"">
 
 <ROOM STORY105
 	(DESC "105")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT105)
+	(CONTINUE STORY106)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT106 "\"Oho! So you're not from Navarre, eh?\" Randall brings his sword up to rest against your throat. \"Is it possible that you're a French spy? Yes! I think so. And in the middle of a war, a spy who's caught can expect no mercy!\"||He twists his sword up toward your throat, but you're not about to let him cut your head off! You turn and run.||\"Stop the spy!\" You race off into the night, as fast as you can run. Randall has more armor on, so he's slower. You duck behind a wagon where no one can see you, and jump in time.">
 
 <ROOM STORY106
 	(DESC "106")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT106)
+	(PRECHOICE STORY106-PRECHOICE)
+	(CONTINUE STORY082)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY106-PRECHOICE ()
+	<EMPHASIZE "You jumped back two years to Brittany.">>
+
+<CONSTANT TEXT107 "You say goodbye to Tom and walk behind the archers to the center of the hill, where the English knights wait for the French to attack. King Edward has split his army into three parts, you can see -- two at the crest of the hill and one in reserve, in front of an old windmill. The knights line up in battle formation, presenting a row of shields to the enemy. Their squires wait for them behind the lines.||Someone grabs hold of your arm.||\"You!\" cries a squire wearing a breastplate and metal helmet. \"What are you doing here?\" He takes his helmet off.||It's your friend, Nigel! He looks older and more confident than he did in the days when he taught you how to be a squire. He should -- for him, that was two years ago!||\"I came to help,\" you say.||\"Well, you're just in time. Here,\" he says excitedly, \"I have an extra suit of armor you could wear. You'll need it. The battle is about to begin!\"||He stops and looks at you strangely. You try to stand a little taller, as if you were two years older, too.">
 
 <ROOM STORY107
 	(DESC "107")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT107)
+	(CONTINUE STORY108)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT108 "\"By the way,\" he says, \"where have you been these last two years? We thought you'd gotten lost in the woods! Did you have to go back to Navarre suddenly?\"||\"Something like that,\" you say.||\"You shouldn't just disappear like that without telling anyone,\" he says, punching you playfully on the shoulder. \"But here we are, anyway. Put your helmet on. Here come the arrows!\"||You put the helmet on as fast as you can and strap yourself into the breastplate. Putting on your armor helps you feel a little of what its like to be a knight.||The English longbowmen fire back at the French archers. They send so many arrows flying that the enemy archers turn and run. A wave of French knights charges up the hill, but before they even get halfway up, the arrows cut them down.||\"I cannot understand the French battle plan,\" Nigel says. \"Why attack so late in the day? And why not organize themselves to attack all at once? They send a few knights at a time, to get slaughtered one by one!\"||\"This is horrible. What is all this fighting for, anyway?\" you ask.||Nigel points to the flags fluttering above you.">
 
 <ROOM STORY108
 	(DESC "108")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT108)
+	(CONTINUE STORY109)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT109 "\"There's your answer,\" he says. \"Both the lilies of France and the leopards of England on King Edward's banners. He believes he should be king of both England and France.\"||\"But that's silly,\" you say, \"England and France are two different countries!\"||Nigel stares at you. \"Don't say such things!\" he whispers. \"Evil comes to those who think evil of the king's plans.\"||Nigel just said what sounded like the motto of the Order of the Garter! But before you can get him to explain it, you hear a whoosh and a crackling sound behind you. The windmill is in flames!||\"Our own men set the fire,\" says Nigel. \"It's getting so dark we can't see to fight without a giant torch.\"||You hear loud shouts from the English knights a few feet away. Some of the attackers are getting through! The lead attacker, a French knight on horseback, plunges into the ranks just ahead of you. The attacker swings a long, spiked club, bashing the heads of knights beneath him. He shouts a strange war cry: \"Montjoie Saint Denis!\"||A young knight with a leopard-covered tunic over his black armor slashes at the French knight with a sword.||\"It's Prince Edward!\" Nigel shouts.||More French knights make it though the arrows. The prince is in the center of a furious swordfight.">
 
 <ROOM STORY109
 	(DESC "109")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT109)
+	(CONTINUE STORY110)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT110 "\"Curse the day I was born,\" mutters Nigel. \"Here I stand, doing nothing! Will I ever have a chance to prove I can be a knight?\"||\"You, squires!\" shouts one of the princes knights. \"One of you run to the king. Tell him we need reinforcements!\"||You and Nigel look at each other.||\"I'll go,\" you say. \"They may soon need you here.\"||\"Thank you, my friend!\" Nigel says.||You run off toward the burning windmill. The flames from the burning windmill rise fifty feet in the air.||This may be your chance to ask Edward about the motto!||The king stands in front of the burning mill, surveying the bloody battle on the hill below him.||\"A message,\" you say breathlessly. \"The prince needs reinforcements!\"||Edward III stares down at you, a grim smile on his lips. \"Is my son dead?\" he asks quietly.||\"No, sire.\"||\"Has his banner fallen? Or does he still fight on?\"||\"He still fights,\" you say, \"but he is well matched.\"||The king clasps you by the shoulders. \"Tell those who sent you here not to send you again,\" he says, \"as long as my son is alive. Tell them that my son must have the chance to win his spurs! Go!\"">
 
 <ROOM STORY110
 	(DESC "110")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT110)
+	(CONTINUE STORY112)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY111
-	(DESC "111")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT112 "You didn't get a chance to ask the king about the motto of the Order of the Garter. Maybe Nigel had the answer -- could the motto have to do with the king's ambition to be king of two countries at once?||The prince and his friends are still battling the French knights when you return, but something is missing from the scene. Then you see what it is -- the prince's banner has fallen! The official flag carrier is busy dueling with a French knight and has let the banner fall to the ground.||The banner is very important to the knights. Should you rush into the middle of the battle and pick the banner up? Or should you run back to the reserves, where the king is, and try to figure out a way to speak with him again?">
+<CONSTANT CHOICES112 <LTABLE "pick up the prince's banner" "go back to the king's reserves">>
 
 <ROOM STORY112
 	(DESC "112")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT112)
+	(CHOICES CHOICES112)
+	(DESTINATIONS <LTABLE STORY115 STORY104>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
 <ROOM STORY113
