@@ -33,7 +33,7 @@
         )>
     >>
 
-<CONSTANT HELP-TEXT "D - Display Data Banks|F - Display data files|Q - quit the game">
+<CONSTANT HELP-TEXT "A - About the contributors|D - Display Data Banks|F - Display data files|Q - quit the game">
 
 <ROUTINE DISPLAY-HELP ()
     <CRLF>
@@ -43,3 +43,13 @@
     <CRLF><CRLF>
     <TELL HELP-TEXT>
     <CRLF>>
+
+<CONSTANT CONTRIBUTORS-HEADER "About the Contributors">
+<CONSTANT CONTRIBUTORS-TEXT "JIM GASPERINI reviews interactive computer fiction for \"Electronic Fun\", and published the history of a medieval french artisans guild in \"Museum\". He has been a videotape editor, a busker, a traveling book salesman, a literary agent and made his operatic debut in the 1983 Metropolitan Operas production of \"Don Carlo\" as Arquebusier (spear-carrier). He resides in New York.||RICHARD HESCOX is an illustrator whose paperback book covers and illustrations have had world-wide distribution. His work has covered such diverse fields as magazine illustration, advertising, record album covers and production designs for films including \"The Howling\" and \"A Trip To Tomorrow.\" He has painted movie posters for \"Swamp Thing\", \"E.T.\", \"The Dark Crystal\" and other features. Some
+of his fantasy work has been published in a portfolio entitled \"A Fatal Beauty.\" He resides in Hollywood, California">
+
+<ROUTINE DISPLAY-CONTRIBUTORS ()
+    <EMPHASIZE CONTRIBUTORS-HEADER>
+    <CRLF>
+    <TELL CONTRIBUTORS-TEXT>
+    <TELL ,PERIOD-CR>>

@@ -10,12 +10,15 @@
 <OBJECT CURRENCY (DESC "none")>
 <OBJECT VEHICLE (DESC "none")>
 
+<CONSTANT CONTRIBUTORS-KEY-CAPS !\A>
+<CONSTANT CONTRIBUTORS-KEY !\a>
 <CONSTANT DATABANKS-KEY-CAPS !\D>
 <CONSTANT DATABANKS-KEY !\d>
 <CONSTANT DATAFILES-KEY-CAPS !\F>
 <CONSTANT DATAFILES-KEY !\f>
 
 <ROUTINE SPECIAL-INTERRUPT-ROUTINE (KEY)
+	<COND (<EQUAL? .KEY CONTRIBUTORS-KEY-CAPS CONTRIBUTORS-KEY> <CRLF> <DISPLAY-CONTRIBUTORS> <PRESS-A-KEY> <RTRUE>)>
 	<COND (<EQUAL? .KEY DATABANKS-KEY-CAPS DATABANKS-KEY> <CRLF> <DATA-BANK> <PRESS-A-KEY> <RTRUE>)>
 	<COND (<EQUAL? .KEY DATAFILES-KEY-CAPS DATAFILES-KEY> <COND (<DATA-FILE ,HERE> <PRESS-A-KEY> <RTRUE>)(ELSE <RFALSE>)>)>
 	<RFALSE>>
@@ -200,7 +203,7 @@
 <ROUTINE STORY026-PRECHOICE ()
 	<EMPHASIZE "You jump ahead 7 years.">>
 
-<CONSTANT TEXT027 "You're standing in a narrow street in the town below Windsor Castle. It's September 15, 1349. All the doors and windows you see are shut. There's nobody around, and an awful smell hangs in the air. A wooden cart pulled by a hungry-looking ox turns the corner. Two men in long robes with dark hoods walk beside it.||\"Bring out your dead!\" they shout. \"Bring out your dead!\"||One of the doors opens, and two weeping girls pull something wrapped in a blanket out into the street. The blanket slips for a moment -- it's a dead body! There's an ugly black lump under the dead woman's shoulder. Her white face is frozen in a look of horrible pain.||The plague! It's 1349. You've arrived smack in the middle of the Black Death, the worst disease in the history of the world.||The men toss the body onto the cart, which is full of other bodies. This is awful! So many people are dying at once that the people left alive can't even give them funerals.|||You run down a side street to get away form the sight. You come to a wide public square.">
+<CONSTANT TEXT027 "You're standing in a narrow street in the town below Windsor Castle. It's September 15, 1349. All the doors and windows you see are shut. There's nobody around, and an awful smell hangs in the air. A wooden cart pulled by a hungry-looking ox turns the corner. Two men in long robes with dark hoods walk beside it.||\"Bring out your dead!\" they shout. \"Bring out your dead!\"||One of the doors opens, and two weeping girls pull something wrapped in a blanket out into the street. The blanket slips for a moment -- it's a dead body! There's an ugly black lump under the dead woman's shoulder. Her white face is frozen in a look of horrible pain.||The plague! It's 1349. You've arrived smack in the middle of the Black Death, the worst disease in the history of the world.||The men toss the body onto the cart, which is full of other bodies. This is awful! So many people are dying at once that the people left alive can't even give them funerals.||You run down a side street to get away form the sight. You come to a wide public square.">
 
 <ROOM STORY027
 	(DESC "027")
@@ -390,7 +393,7 @@ prince. He calls to another boy. \"This is Nigel, squire to one of my best knigh
 	(CONTINUE TEXT052)
 	(FLAGS TAKEBIT)>
 
-<CONSTANT TEXT052 "\"Many years ago,\" the king shouts, \"according to the stories, the glorious King Arthur used to meet on this very hill with his Knights of the Round Table.  The best knights of his kingdom would sit in a circle, so that no one knight could say that he was best because he sat at the head of the table.\"||\"We hereby swear, on our honor as a knight and king, that before four years have passed we will start a new Round Table. The best knights of our kingdom will sit with us here, in a chapel we will dedicate to the holy knight, St. George!\"||\"Hurrah!\" cry the knights and ladies. \"Hurrah for King Edward! Hurrah for the new Round Table!\"||The king's plans for the best knights of our kingdom sound like the beginnings of the Order of the Garter. The king didn't mention the garter, though. If he's starting a new Round Table, why not go back to the time of the old one to see if King Arthur knows what the motto means?||It's no use staying here, in 1344, where everyone will soon know you refused the prince's offer.">
+<CONSTANT TEXT052 "\"Many years ago,\" the king shouts, \"according to the stories, the glorious King Arthur used to meet on this very hill with his Knights of the Round Table. The best knights of his kingdom would sit in a circle, so that no one knight could say that he was best because he sat at the head of the table.\"||\"We hereby swear, on our honor as a knight and king, that before four years have passed we will start a new Round Table. The best knights of our kingdom will sit with us here, in a chapel we will dedicate to the holy knight, St. George!\"||\"Hurrah!\" cry the knights and ladies. \"Hurrah for King Edward! Hurrah for the new Round Table!\"||The king's plans for the best knights of our kingdom sound like the beginnings of the Order of the Garter. The king didn't mention the garter, though. If he's starting a new Round Table, why not go back to the time of the old one to see if King Arthur knows what the motto means?||It's no use staying here, in 1344, where everyone will soon know you refused the prince's offer.">
 
 <ROOM STORY052
 	(DESC "052")
@@ -418,7 +421,7 @@ prince. He calls to another boy. \"This is Nigel, squire to one of my best knigh
 	(CONTINUE STORY056)
 	(FLAGS TAKEBIT)>
 
-<CONSTANT TEXT056 "\"What's wrong?\" Nigel asks from below.||\"My helmet's stuck!\"||\"Hey!\"  someone shouts. \"Randall! What are you doing?\"||Suddenly, your horse gives a whinny and gallops off. Randall must have scared it somehow!||You grab on tight to the horse's neck. The armor clanks and pinches as you bounce up and down. The horse is running at top speed!||\"Watch where you're going, fool!\" someone shouts.||\"Sorry!\" you call. There must be people watching your wild ride -- but you can't watch where you're going. You can't even see!||\"Rosalinde!\" you call. \"Slow down!\" The horse gallops on.||Maybe you should jump in time. You could stay right here, but jump ahead a few minutes. Once you've disappeared out from inside this armor, you could catch the horse and walk it back.">
+<CONSTANT TEXT056 "\"What's wrong?\" Nigel asks from below.||\"My helmet's stuck!\"||\"Hey!\" someone shouts. \"Randall! What are you doing?\"||Suddenly, your horse gives a whinny and gallops off. Randall must have scared it somehow!||You grab on tight to the horse's neck. The armor clanks and pinches as you bounce up and down. The horse is running at top speed!||\"Watch where you're going, fool!\" someone shouts.||\"Sorry!\" you call. There must be people watching your wild ride -- but you can't watch where you're going. You can't even see!||\"Rosalinde!\" you call. \"Slow down!\" The horse gallops on.||Maybe you should jump in time. You could stay right here, but jump ahead a few minutes. Once you've disappeared out from inside this armor, you could catch the horse and walk it back.">
 <CONSTANT CHOICES056 <LTABLE "jump ahead five minutes in time" "stay on the galloping horse">>
 
 <ROOM STORY056
@@ -566,7 +569,7 @@ yourself?">
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
-<CONSTANT TEXT075 "You're standing near a river by a town of thatched-roof houses. There's a crowd of people coming your way, pulling something over a row of logs with long ropes.||\"Heave!\" shouts a guard, cracking a whip on the backs of the people pulling the ropes. You walk forward to see what it is they're dragging.||It's a ship! A long wooden ship, pointed at both ends.|||\"You!\" shouts a man with a spear. \"You're not a Saxon!\" He pulls you over to the ship, and puts you to work pulling with the others. A whip cracks across your back.||\"Heave!\"||Next to you is a man with a tattoo on his cheek.||\"What's going on?\" you ask him.||\"The Saxons are burying one of their kings,\" he mutters as he pulls. \"They put all his weapons and jewels and magic powders in a ship with his body. They've made us dig a big hole, and now were pulling the whole boat there to bury it!\"">
+<CONSTANT TEXT075 "You're standing near a river by a town of thatched-roof houses. There's a crowd of people coming your way, pulling something over a row of logs with long ropes.||\"Heave!\" shouts a guard, cracking a whip on the backs of the people pulling the ropes. You walk forward to see what it is they're dragging.||It's a ship! A long wooden ship, pointed at both ends.||\"You!\" shouts a man with a spear. \"You're not a Saxon!\" He pulls you over to the ship, and puts you to work pulling with the others. A whip cracks across your back.||\"Heave!\"||Next to you is a man with a tattoo on his cheek.||\"What's going on?\" you ask him.||\"The Saxons are burying one of their kings,\" he mutters as he pulls. \"They put all his weapons and jewels and magic powders in a ship with his body. They've made us dig a big hole, and now were pulling the whole boat there to bury it!\"">
 
 <ROOM STORY075
 	(DESC "075")
@@ -816,207 +819,91 @@ growls. His eyes are fierce beneath his hairy face. \"Two years ago, I swore a s
 	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
 
+<CONSTANT TEXT113 "You're standing with Tom by the cannon among a group of English archers. Trumpets sound the call to battle. The archers take their bowstrings out of their helmets, where they keep them dry. They have to pull with all their strength to bend their mighty bows so the strings will fit on them.||\"I hope this works,\" Tom says as you help him roll a round stone into the fat mouth of the cannon. \"It's never been tried in battle before. I'd be much happier with a bow in my hands, but when you're in an army you do what you are told!\" So Tom really was an archer!||Down below, you see the French army approaching. The army is all spread out and disorganized, but it is far larger than the English forces with you on the hill.||\"Look there,\" says Tom with surprise. \"Archers! I thought the French knights didn't believe in archery.\"||\"Those are Italian crossbowmen,\" an archer says. \"They were hired by the French!\"||\"Ready,\" the English archers' commander shouts.">
+
 <ROOM STORY113
 	(DESC "113")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT113)
+	(CONTINUE STORY114)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT114 "The archers draw back their bows and wait.||\"Hyaaagh!\" comes a shout from the French army below. Thick, short arrows from the crossbows zip over your head.||\"Shoot at will!\" shouts the commander. \"Stand back,\" says Tom. He holds a burning torch in his hand and uses it to set off the cannon.||KABOOM! A huge cloud of smoke erupts from the cannon. The stone, however, just bloops about fifteen feet down the hill and sticks in the ground.||\"Bah,\" says Tom. \"We might as well roll the stones down the hill!\"||It will be a long time, you guess, before battles are won using guns. This is not the way to get King Edward to help you!||\"I'm going to try it once more,\" Tom says, \"then I'll get my bow and join the archers, where I belong.\"||He puts the torch to the cannon, but nothing happens.||\"Watch out,\" screams Tom. \"It's going to explode!\"||You jump for cover, but not fast enough. The last things you see before you lose consciousness are the flash of gunpowder and the ground rushing up to meet you.">
 
 <ROOM STORY114
 	(DESC "114")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT114)
+	(CONTINUE STORY097)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT115 "You watch the prince and his knights battle the French knights by the flickering yellow light of the burning mill. The banner lies on the ground, trampled underfoot. You pick up a shield and wait for an opening.||There! The way to the banner is clear. You rush in to pick it up. Just as you reach it, someone else's hand grabs the pole. It's Nigel! You smile at each other as you raise the banner high.||\"Hurrah!\" cry the fighting knights as they see their banner fly again.||The clink and clank of crossing swords is all around you. From the ground come the the shrieks of the wounded and the groans of the dying.||You hold your shield up as a knight runs at you with his sword. Another knight comes at him from the side and slices off his arm with a battle-ax. The first knight's arm, still holding the sword, falls at your feet.||You look at Nigel. His mouth is set in a tight, brave smile, but his eyes show fear and horror. So this is the glamorous \"sport\" the knights are so very fond of? You prefer the tournaments to this bloody, senseless killing. But knights were warriors, and war is always bloody and cruel.">
 
 <ROOM STORY115
 	(DESC "115")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT115)
+	(CONTINUE STORY116)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT116 "You're not sure how much more of this you can take. Soon, though, the French knights who got through the lines are all killed or captured.||The prince and his friends stick their swords in the ground and lean on them to rest.||\"Where is the messenger we sent to the king?\" calls a tall, one-eyed knight.||\"Here I am,\" you say. Leaving Nigel to hold the banner pole, you walk forward.||\"The king told me to tell you,\" you say, \"not to send for reinforcements unless his son was killed. He said the prince must earn his spurs.\"||The one-eyed knight turns to the prince. Blood from a gash on
+the prince's cheek drips down on his black chain mail.||\"Earn his spurs?\" says the knight. \"I should say the young prince has earned them. He was earned them ten times over!\"||\"Hurrah for Prince Edward!\" shout the knights.||The Black Prince pulls his sword from the ground and walks forward.||\"It is not only I who have earned the spurs of knighthood,\" he says. \"I saw two squires bravely enter the thick of battle to rescue my banner. Kneel, squire!\" he commands you.">
 
 <ROOM STORY116
 	(DESC "116")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT116)
+	(CONTINUE STORY118)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY117
-	(DESC "117")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT118 "You kneel down in the blood-soaked grass in front of him. The prince holds out his sword. The blade is so nicked and dented by the fighting that it looks like the blade of a saw. He taps the side of the sword on your right shoulder, then your left.||\"Arise, knight,\" he says. \"Be true to your lord, your honor, and your lady fair.\"||Then he calls Nigel forward and performs the same ceremony for him.||You've done it! You've been knighted, by the Black Prince himself! Nigel turns to you and smiles, fighting back tears of joy.||The battle goes on late into the night, but finally the French army is defeated. The exhausted English knights lie down to sleep, right in the field of battle.||You still have to find out what the motto of the Order of the Garter means, but now that you're a knight, it should be easier to complete your mission. None of the knights here wear garters on their arms yet. Does it have to do with the king's plans that brought about this battle?||You know that your friend Nigel, now Sir Nigel, will become a member of the order. The other members could be the knights sleeping all around you, though they may not know it yet.">
 
 <ROOM STORY118
 	(DESC "118")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT118)
+	(PRECHOICE STORY118-PRECHOICE)
+	(CONTINUE STORY119)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY118-PRECHOICE ()
+	<EMPHASIZE "You jump ahead two years to Windsor.">>
+
+<CONSTANT TEXT119 "You're back in Windsor, on April 23, 1348. You're standing in the shadows of a courtyard of the castle. A crowd of people watches a long carriage pulled by four black horses enter through the gate. A woman gets out of the carriage, dressed in a beautiful white gown. She goes through a door to a large hall. You can hear music playing inside.||You see a long-haired, frizzy-bearded knight sitting on a block of stone nearby. He looks very sad.||\"What is happening?\" you ask him.||\"The guests are arriving for the king's ball,\" he says. \"I, too, was invited, but they will not let me in.\"||\"Why not?\"||\"Who would want to dance,\" he says sadly, \"with a poor knight whose last bath was taken four long years ago?\"||You look at him. It's Sir Cuthbert! He's the knight who swore never to cut his hair or take a bath until he beat Sir Guy. He's kept his oath, all right. No wonder they won't let him in. He smells terrible!||A group of knights dressed in silk and satin arrive on horseback and dismount. You try to follow them in, but a guard blocks your path.||\"Only knights and ladies invited by the king are allowed in,\" he tells you. \"Stand aside!\"">
 
 <ROOM STORY119
 	(DESC "119")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT119)
+	(CONTINUE STORY120)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT120 "He pushes you back with a long spear, sending you sprawling over the cobblestones. People laugh. You pick yourself up and turn to go. You don't care about their stupid ball anyway!||\"In the name of St. George!\" You hear a familiar voice. Its your friend Nigel! Sir Nigel, now. He stares at you with astonishment.||\"We thought you were killed,\" he says, \"on the battlefield at Crecy!\" He turns to the guard and scowls. \"This is a hero of Crecy,\" he says sternly. \"If anyone should be admitted to the king's ball, it should be this noble knight!\"||You follow him in to a large hall lined with tapestries and lit with torches. Knights and ladies dance back and forth in long lines. The prince and the king dance with their ladies.||\"I don't know how you've come back to us,\" Nigel says, \"but welcome, welcome! The king has invited all the heroes of Crecy to the tournament tomorrow. But tonight we dance!\"||A young woman in a long gown comes up to Nigel. You recognize her -- it's Lady Joan of Kent, the one you last saw hunting with falcons. Nigel turns and shrugs to you. He and Joan join the line of dancers.||You sit down at a table near a giant fireplace, across from a knight wearing long, pointed shoes.||\"That was Lady Joan, was it not?\" he says to you. \"Have you heard the latest rumor? She and Prince Edward are in love!\"||So that's her secret. Joan always said she was in love with a very noble knight -- it turns out it's the prince himself!">
 
 <ROOM STORY120
 	(DESC "120")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT120)
+	(CONTINUE STORY121)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT121 "\"Why aren't you dancing?\" you ask the knight.||He rolls his eyes. \"Oh, I don't really feel like it. I'm here as a prisoner, after all. I'm a French knight, captured at the battle of Crecy. Noble prisoners are treated very well -- I sit here fighting in tournaments, going to balls, and playing chess. But imagine. It's been two years since I've seen my home in France.\"|||The music stops and the dancers drift apart. Lady Joan and Nigel stand talking with the king in the middle of the hall. There's something round sitting there on the floor, made of blue cloth. The king bends down to pick it up.||All across the hall, people watch the king and laugh, quietly. What's so funny? You see Lady Joan blushing. It must be a garter he's holding, which was holding up Lady Joan's stocking, but fell off.||\"It's the king himself who picks up Lady Joan's garter,\" some ladies near you whisper, \"but it's really the prince she loves!\" The crowd falls silent when they see the king is about to speak.||\"It has been four years,\" he says loudly, \"since I promised to start a new Round Table of knights, like that of King Arthur. Tomorrow I will choose thirty of my noblest knights to honor above all others.\" He waves the garter above his head, \"This will be our symbol. Honi soit qui mal y pense! May evil come to those who think evil of it!\"">
 
 <ROOM STORY121
 	(DESC "121")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT121)
+	(CONTINUE STORY122)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT122 "He signals the musicians, and the dancing starts again.||He's said the famous motto! At last you know where the words come from! The king first uses them to silence whispers about a secret romance, and then gets the idea to use the garter as the symbol of his knights.||\"You look disappointed about something,\" the French knight says to you. \"What's the matter?\"||\"How would you feel,\" you say, \"if you went through all sorts of dangers to find something. Then when you found what you were looking for, it wasn't what you thought it was at all?\"||He smiles. \"That's the way it is with most knightly quests. The knights of the Round Table spent their lives looking for the Holy Grail, but most of them never found it. It doesn't matter so much what you're searching for as much as how you look for it, what you find along the way, and how much you can help the other people searching.\"||\"Here,\" he says, bringing out a leather bag full of chess pieces. \"Let's have a game of chess, to take your mind off your troubles.\"||\"Thanks, Sir ... uh ...\"||\"Sir Guy is my name.\"||Sir Guy! Hes the knight Sir Cuthbert swore he would beat some day. That gives you an idea.">
 
 <ROOM STORY122
 	(DESC "122")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT122)
+	(CONTINUE STORY124)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY123
-	(DESC "123")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT124 "\"I don't feel like playing much,\" you tell him, \"but I have a friend outside who would love to play with you. Come on!\"||You take Sir Guy outside, where Sir Cuthbert sits with his head on his hands. Sir Cuthbert is startled to be face to face with his old enemy, but smiles when you whisper your idea in his ear.||The two knights set the pieces up and play. Sir Guy, you can tell, is eager to get the game over with so he can get away from his awful-smelling opponent. In a short time, the game is over. Sir Cuthbert has won.||\"Praise God!\" he cries, knocking over the table as he jumps to his feet. \"I've won! Now I may take a bath again!\" Sir Guy looks at him as if he were crazy. Sir Cuthbert whoops with delight and hugs you with gratitude.||You slip out of his arms, and into the shadows of the castle while he dances up and down with glee.||It's too bad, you think as you prepare to jump back to your own time, that the knights didn't learn to solve their disputes with chess instead of war. They still haven't learned that lesson well enough back where you're going, but all the same you're glad to be going back home.">
 
 <ROOM STORY124
 	(DESC "124")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT124)
+	(PRECHOICE STORY124-PRECHOICE)
+	(VICTORY T)
 	(FLAGS TAKEBIT)>
 
+<ROUTINE STORY124-PRECHOICE ()
+	<EMPHASIZE "Congratulations! You have reached the end of your quest.">>
