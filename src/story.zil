@@ -672,175 +672,76 @@ jump through a dark doorway to hide.||You've jumped into a steaming hot pool!||\
 <ROUTINE STORY092-PRECHOICE ()
 	<EMPHASIZE "You went back 1000 years.">>
 
+<CONSTANT TEXT093 "You decide to help Countess Jannedik defend the town. One of the rules of chivalry calls for knights to help women in distress. Countess Jannedik isn't a helpless damsel -- she's a fierce warrior herself! But if you want to become a knight, you must act brave. Later, perhaps, you can jump ahead two years to the battle of Crecy.||The attacking army tires of trying to climb the walls. They pull their catapult out of range of the archers.||\"Good work, my Bretons!\" shouts Countess Jannedik from the walls. \"Once more we have held them off. But they will return.\" She turns to you. \"When will help from England arrive?\"||\"My lady!\" a soldier shouts. \"Look to the sea!\"||Everyone runs to the top of the walls. You see a white sail against the blue sky, then another. Sir Walter de Manny has arrived!||\"Prepare a feast,\" the countess commands, \"to celebrate the arrival of our valiant allies!\"">
+
 <ROOM STORY093
 	(DESC "093")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT093)
+	(PRECHOICE STORY093-PRECHOICE)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY093-PRECHOICE ()
+	<EMPHASIZE "You go to welcome Sir Walter.">>
+
+<CONSTANT TEXT094 "You walk up the hill at Crecy. The banners at the top of the hill have three leopards on them. They must be the leopards of the kings of England. King Edward founded the Order of the Garter, so this is the right army for you to join.||When you get to the top of the hill, however, the English army is gone. All you see is a long line of helmets sitting on the ground. That's strange. Why did the knights leave their helmets here, and where have they gone? You look around.||You see the knights behind a windmill, with the army's supply wagons. The knights have gone off to eat while they wait for the French to arrive, leaving their helmets to mark their places in the battle order. This army is certainly well organized!||You walk along the row of helmets. Soon the helmets are
+replaced by rows of bows and arrows. This must be where the archers will fight.||A few steps ahead, two men in green clothes drag along what looks like a primitive cannon!||\"Here, lend us a hand, will you,\" one of them calls to you. He looks familiar ... yes! Its Tom, the yeoman farmer you met in Winchester in 1357. He told you he was an archer for the king at Crecy. What is he doing with a cannon?">
 
 <ROOM STORY094
 	(DESC "094")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT094)
+	(CONTINUE STORY096)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY095
-	(DESC "095")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT096 "\"Sure, Tom,\" you say as you push.||He squints at you. \"How are you knowing my name, now?\" He doesn't recognize you, of course. It will be eleven years before he meets you in Winchester!||\"Why, because everybody knows you,\" you say. \"You're Tom, with the cannon.\"||He smiles. \"So already we cannoneers are well known, eh? Wait until the battle! King Edward himself will come a-thanking us, I don't doubt, for using this new contraption.\"||That's a thought. If you stay with Tom and his friends, you might be rewarded by King Edward when the new cannon surprises the French and wins the battle. That would give you a chance to ask the king about the Order of the Garter.||A trumpet sounds. \"It's the signal,\" shouts Tom. \"The French are coming up through the woods!\" The knights and archers come running to their places.||Should you stay with Tom or go to where the knights are lining up to fight?">
+<CONSTANT CHOICES096 <LTABLE "help Tom" "find the knights">>
 
 <ROOM STORY096
 	(DESC "096")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT096)
+	(CHOICES CHOICES096)
+	(DESTINATIONS <LTABLE STORY113 STORY107>)
+	(TYPES TWO-NONES)
 	(FLAGS TAKEBIT)>
+
+<CONSTANT TEXT097 "You're lying on the back of a wooden cart. You can hear the trumpets and screams of the battle of Crecy in the distance. The cannon is gone, but your friend Tom is right next to you.||\"I should be getting back to my bow now.\" Tom pats you on the shoulder. \"Rest quiet. The doctor will be along soon. He'll empty out some of your bad blood, so you'll soon be ready to fight again.\"||You have to get out of here. The battle of Crecy may still be the right place to find Edward and become a knight, but it was a mistake to join the cannoneers instead of looking for the knights. You're in France ... didn't Lady Joan's friend Sir Walter de Manny come to France to help the Countess of Brittany a couple of years ago?">
 
 <ROOM STORY097
 	(DESC "097")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT097)
+	(PRECHOICE STORY097-PRECHOICE)
+	(CONTINUE STORY082)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY097-PRECHOICE ()
+	<EMPHASIZE "You jumped back two years to find Sir Walter de Manny.">>
+
+<CONSTANT TEXT098 "You're sitting at a banquet table with Sir Walter and Countess Jannedik. Sir Walter wears a red eyepatch over his left eye.||\"My good Sir Walter,\" says the countess, \"have you hurt your eye?\"||Sir Walter kisses her hand. \"No, my lady. I have sworn never to take off this eyepatch until I have done a brave deed.\"||Countess Jannedik smiles. \"You'll get your chance soon enough. But first, let the pipers play!\"||Before the music can start, a huge rock comes smashing through the roof. It crashes to the floor, showering the room with dust. Countess Jannedik jumps to her feet. \"The French are sending us gifts again,\" she says angrily, \"with their giant catapult!\"||\"I'm afraid, madame, that this lovely dinner must wait. We will act at once!\" He turns to his men. \"We need fifty volunteers. Who will come with me?\"">
 
 <ROOM STORY098
 	(DESC "098")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT098)
+	(CONTINUE STORY100)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY099
-	(DESC "099")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT100 "\"I shall ride beside you,\" cries Countess Jannedik.||\"We will, too!\" shout Sir Walter's knights. Countess Jannedik takes you aside.||\"We will sneak out the back way,\" she says, \"and attack the catapult from the rear. I want you to wait at the front gate. Open the gate for us when I signal you with my sword. Hurry!\"||You run to the front gate. You climb to the top of the tower to watch for the countess's signal.||WHAM!||The gate shakes beneath you as a huge rock smashes into it. The attackers aim straight for the gate, hoping to smash it down so they can pour their army into the town.||Another crashing blow hits the gate. The iron creaks and bends, but so far it holds firm.||\"Look there!\" a guard shouts. Off in the distance you can see Sir Walter, the countess, and the fifty volunteers. They gallop along in their battle armor. There are so few of them! What can they hope to do?||Sir Walter tears off his eyepatch and spurs his horse. He shouts a fearsome war cry and rides straight at the army! The French knights are so surprised by this crazy attack, they turn and run away.||Countess Jannedik and the fifty knights rush after him, and in a few minutes they destroy the catapult.||\"Hurrah!\" shout the guards and archers.||The French knights soon come to their senses, though. When they realize how few knights the countess has with her, they turn around.">
 
 <ROOM STORY100
 	(DESC "100")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT100)
+	(CONTINUE STORY102)
 	(FLAGS TAKEBIT)>
 
-<ROOM STORY101
-	(DESC "101")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
-	(FLAGS TAKEBIT)>
+<CONSTANT TEXT102 "Countess Jannedik waves her sword at you. It's the signal!||\"Open the gates!\" you shout to the guards. A horse pulls the rope that draws the gate up.||Sir Walter and Countess Jannedik ride toward you as fast as they can, with a thousand French knights chasing after them. The gate creaks open under you. The raiding party rushes into the town, welcomed by cheers. Now that the catapult has been destroyed, the attack will be easier to defeat.||Uh-oh. The rope holding the gate open is stuck! The gate is wide open for the attacking knights!||\"Here!\" Sir Walter shouts to you. \"Use my sword. You're close enough to cut the rope in time!\" Sir Walter's sword comes spinning up to you. You have to be careful you don't catch it by the sharp blade!||You catch it by the handle and crawl out across a narrow stone ledge. You duck as an arrow whisks past your ear. The rope is still far away! You have to stretch out and swing with the sword ...||The rope slices in two. The iron gate falls with a crash, just as the galloping knights are about to ride through.||You reached out too far with the sword, though, and lost your balance. You're falling, right toward the knights below!||It's life or death for you now. Jump in time, quick!">
 
 <ROOM STORY102
 	(DESC "102")
-	(STORY TEXT)
-	(EVENTS NONE)
-	(PRECHOICE NONE)
-	(CHOICES NONE)
-	(DESTINATIONS NONE)
-	(REQUIREMENTS NONE)
-	(TYPES NONE)
-	(CONTINUE NONE)
-	(ITEM NONE)
-	(CODEWORD NONE)
-	(COST 0)
-	(DEATH F)
-	(VICTORY F)
+	(STORY TEXT102)
+	(PRECHOICE STORY102-PRECHOICE)
+	(CONTINUE STORY074)
 	(FLAGS TAKEBIT)>
+
+<ROUTINE STORY102-PRECHOICE ()
+	<EMPHASIZE "You traveled ahead two years to the battle of Crecy.">>
 
 <ROOM STORY103
 	(DESC "103")
