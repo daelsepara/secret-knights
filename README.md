@@ -4,7 +4,7 @@ This is a ZIL Implementation of **Secret of the Knights** game book (Time Machin
 
 | **Cover art** | **Back cover blurb**|
 |:-:|:-:|
-|![Cover Art](/images/secret-knights.jpg)|**IT IS THE YEAR 1340.**<br>*You have traveled back to the age of knights.*<br>A squire has just accused you of being a sorcerer. You must prove yourself in a duel with quarterstaves, *but you've never used them before.*  You can try to defend yourself or escape through the angry crowd. Your decision can lead you to safety or leave you stranded in time!|
+|![Cover Art](/images/secret-knights.jpg)|**IT IS THE YEAR 1340.**<br><br>*You have traveled back to the age of knights.*<br><br>A squire has just accused you of being a sorcerer. You must prove yourself in a duel with quarterstaves, *but you've never used them before.*  You can try to defend yourself or escape through the angry crowd. Your decision can lead you to safety or leave you stranded in time!|
 | |ARE YOU READY TO FACE THE DANGER?|
 | |*Cover painting by Richard Hescox|
 
