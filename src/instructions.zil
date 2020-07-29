@@ -33,7 +33,7 @@
         )>
     >>
 
-<CONSTANT HELP-TEXT "A - About the contributors|D - Display Data Banks|F - Display data files|Q - quit the game">
+<CONSTANT HELP-TEXT "A - About the contributors|D - Display Data Banks|F - Display data files|R - Restore progress from a saved file|S - Save current progress to a file|Q - quit the game">
 
 <ROUTINE DISPLAY-HELP ()
     <CRLF>
