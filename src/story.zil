@@ -370,7 +370,7 @@ prince. He calls to another boy. \"This is Nigel, squire to one of my best knigh
 <ROOM STORY049
 	(DESC "049")
 	(STORY TEXT049)
-	(CONTINUE TEXT050)
+	(CONTINUE STORY050)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT050 "\"Many years ago,\" he shouts, \"according to the stories, the glorious King Arthur used to meet on this very hill with his Knights of the Round Table. The best knights of his kingdom would sit in a circle, so that no one knight could say that he sat at the head of the table.\"||\"We hereby swear, on our honor as a knight and king, that before four years have passed we will start a new Round Table. The best knights of our kingdom will sit with us here, in a chapel we will dedicate to the holy knight, St. George!\"||\"Hurrah!\" cry the knights and ladies. The knights wave their swords in the air. \"Hurrah for King Edward! Hurrah for the new Round Table!\"||Well, the king's plans for the best knights of our kingdom sound like the beginning of the order of knights you're looking for. But he didn't mention the garter, or the famous motto. Could Froissart have been wrong about the year he began the Order?||You take a close look at Nigel as he leads you off to the tents. You recognize him -- he's the knight you saw in 1357 at the armorer's shop you were working in! He's still a squire now, but you know that someday he'll become Sir Nigel and wear the garter. He'll be the perfect person to teach you what knights need to know. Then, when the opportunity comes to become a knight yourself, you'll be ready for it!">
@@ -390,7 +390,7 @@ prince. He calls to another boy. \"This is Nigel, squire to one of my best knigh
 <ROOM STORY051
 	(DESC "051")
 	(STORY TEXT051)
-	(CONTINUE TEXT052)
+	(CONTINUE STORY052)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT052 "\"Many years ago,\" the king shouts, \"according to the stories, the glorious King Arthur used to meet on this very hill with his Knights of the Round Table. The best knights of his kingdom would sit in a circle, so that no one knight could say that he was best because he sat at the head of the table.\"||\"We hereby swear, on our honor as a knight and king, that before four years have passed we will start a new Round Table. The best knights of our kingdom will sit with us here, in a chapel we will dedicate to the holy knight, St. George!\"||\"Hurrah!\" cry the knights and ladies. \"Hurrah for King Edward! Hurrah for the new Round Table!\"||The king's plans for the best knights of our kingdom sound like the beginnings of the Order of the Garter. The king didn't mention the garter, though. If he's starting a new Round Table, why not go back to the time of the old one to see if King Arthur knows what the motto means?||It's no use staying here, in 1344, where everyone will soon know you refused the prince's offer.">
