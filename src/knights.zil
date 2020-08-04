@@ -1,7 +1,8 @@
 "Secret of the Knights (ZIL)"
 
-<CONSTANT GAME-BANNER "Secret of the Knights||Jim Gasperini (1984)||Implemented in ZIL by SD Separa (2020)|">
-<CONSTANT RELEASEID 2>
+<CONSTANT GAME-TITLE "||Secret of the Knights">
+<CONSTANT GAME-DESCRIPTION "|Jim Gasperini (1984)||Implemented in ZIL by SD Separa (2020)|">
+<CONSTANT RELEASEID 3>
 <CONSTANT IFID "17070DAA-75FF-45AC-887B-80FF413C48DD">
 <VERSION XZIP>
 
