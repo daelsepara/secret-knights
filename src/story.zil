@@ -4,8 +4,8 @@
 
 <GLOBAL CHARACTERS-ENABLED F>
 
-<CONSTANT BAD-ENDING "You have failed in your mission.">
-<CONSTANT GOOD-ENDING "Mission Completed.">
+<CONSTANT BAD-ENDING "You have failed in your mission.|">
+<CONSTANT GOOD-ENDING "Mission Completed.|">
 
 <OBJECT CURRENCY (DESC "none")>
 <OBJECT VEHICLE (DESC "none")>
@@ -189,7 +189,7 @@
 	(FLAGS LIGHTBIT)>
 
 <ROUTINE STORY025-PRECHOICE ()
-	<EMPHASIZE "You become a harness maker">>
+	<EMPHASIZE "You decided to become a harness maker">>
 
 <CONSTANT TEXT026 "You're standing just outside a small village near Windsor. Patches of snow lie all about. That's good -- you jumped ahead in time because the plague went away in the winter. The germs were carried by fleas and rats, which aren't as active in the wintertime.||You walk down the main street of the village. Where is everybody? The houses look empty, deserted.||This is a ghost town! Did the plague leave nothing alive here at all? Maybe you should jump further ahead in time.||Something moves in a doorway. It's only a dog, slinking along the side of a house. The poor dog is thin. Its eyes are wild.||\"Awroo!\" There's another dog behind you. And another up ahead. You're surrounded by a pack of dogs, growling and drooling with hunger! They've found something unusual: nice, fat prey. You!||One of the dogs trots forward, baring it fangs. But he's going to have to find his dinner somewhere else!">
 
@@ -383,7 +383,7 @@ prince. He calls to another boy. \"This is Nigel, squire to one of my best knigh
 	(FLAGS LIGHTBIT)>
 
 <ROUTINE STORY050-PRECHOICE ()
-	<EMPHASIZE "You decide to become a squire.">>
+	<EMPHASIZE "You decided to become a squire.">>
 
 <CONSTANT TEXT051 "You decide you'd rather become a squire to a full-grown knight.||\"Sorry,\" you tell the boy. \"I have other plans.\"||The boy smiles in a strange way, and turns away.||Sir Cuthbert stares at you with astonishment. Squire Randall grins wickedly.||\"What!\" Cuthbert shouts. \"You said no to the Prince of Wales? Edward, the kings son? You're crazy!\"||Ow! Somebody hits you on the back of the head. \"On your knees, fool!\" an angry knight shouts.||\"I ... I'm sorry, you say, I didn't know!\" You look again at the tunic the boy is wearing. Of course, it has three gold leopards on it -- and leopards decorate the crest of the English kings.||\"Get out of here, idiot,\" the knights shout. They push you away. You hide in the crowd of tournament spectators. Everyone is following a tall man in armor who strides to the top of the hill. The man looks like the prince -- it must be King Edward III himself!">
 
