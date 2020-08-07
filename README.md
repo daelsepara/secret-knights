@@ -36,13 +36,13 @@ ISBN 0-553-23601-6
 
 - No in-game illustrations or graphics
 - Select an action by pressing the number keys that correspond to the option (**1** - **2**).
-- Press **q** or **Q** during action selection to quit or terminate the program
-- Press **a** or **A** during action selection to view information about the contributors
-- Press **d** or **D** during action selection to view Data Bank
-- Press **f** or **F** during action selection to view Data File (hints)
-- Press **r** or **R** during action selection to restore progress from a save file
-- Press **s** or **S** during action selection to save current progress to a file
-- Press **h** or **H** or **?** during action selection lists the commands **A**/**D**/**F**/**S**/**R**/**Q** and what each does 
+- Press **q** or **Q** to quit or terminate the program
+- Press **a** or **A** to view information about the contributors
+- Press **d** or **D** to view Data Bank
+- Press **f** or **F** to view Data File (hints)
+- Press **r** or **R** to restore progress from a save file
+- Press **s** or **S** to save current progress to a file
+- Press **h** or **H** or **?** lists the commands **A**/**D**/**F**/**S**/**R**/**Q** and what each does 
 
 ## Bugs
 
