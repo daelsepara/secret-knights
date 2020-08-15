@@ -1,14 +1,7 @@
-<INSERT-FILE "numbers">
-
 <GLOBAL STARTING-POINT STORY001>
-
-<GLOBAL CHARACTERS-ENABLED F>
 
 <CONSTANT BAD-ENDING "You have failed in your mission.|">
 <CONSTANT GOOD-ENDING "Mission Completed.|">
-
-<OBJECT CURRENCY (DESC "none")>
-<OBJECT VEHICLE (DESC "none")>
 
 <CONSTANT CONTRIBUTORS-KEY-CAPS !\A>
 <CONSTANT CONTRIBUTORS-KEY !\a>
@@ -22,14 +15,6 @@
 	<COND (<EQUAL? .KEY DATABANKS-KEY-CAPS DATABANKS-KEY> <CRLF> <DATA-BANK> <PRESS-A-KEY> <RTRUE>)>
 	<COND (<EQUAL? .KEY DATAFILES-KEY-CAPS DATAFILES-KEY> <COND (<DATA-FILE ,HERE> <PRESS-A-KEY> <RTRUE>)(ELSE <RFALSE>)>)>
 	<RFALSE>>
-
-<ROUTINE RESET-OBJECTS ()
-	<RETURN>>
-
-<ROUTINE RESET-STORY ()
-	<RETURN>>
-
-<CONSTANT TEXT "This story has not been written yet.">
 
 <CONSTANT TEXT001 "You're standing on a dirt road lined with trees near Windsor, England. It's April 28, 1344. In the distance you can see a castle on a hill, with giant tents on the fields below.||You can hear the sound of galloping hooves coming up behind you.||You spin around. A big horse rears back on its hind legs. Its front hooves kick wildly in the air.||\"Easy, Bizan!\" says its rider. He's dressed like a knight!||The horse neighs and snorts with a surprise at your sudden appearance. You jump out of the way, but the panicked horse throws the knight into the weeds by the side of the road.||\"Oof!\" says the knight. His heavy armor makes a clanking sound as he falls flat on his back. On the road behind him, a boy leading a horse turns and runs away. The two horses trot off to graze in a field.||\"Squire!\" calls the knight in a weak voice. \"Squire Randall! Where is that boy?\"||You walk over to the knight. \"May I help you, sir?\" you say.">
 
@@ -71,7 +56,6 @@
 	(STORY TEXT008)
 	(CHOICES CHOICES008)
 	(DESTINATIONS <LTABLE STORY013 STORY023>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT009 "You're sitting in the harness maker's shop, surrounded by half-finished leg pieces, breast pieces and shields. You've been working for a week now. In the little spare time you have, Richard has been teaching you more about fighting with quarterstaves.||\"Keep those bellows pumping!\" shouts the master.||Sweat runs down your face. Your job is to keep a red-hot fire going. You push up and down with your foot on a big windbag. The workmen hammer on the sheets of glowing metal, sending sparks flying everywhere. A spark lands in your hair! You brush it out with your hand. Out of the corner of your eye, you see somebody enter the shop.||\"Welcome, good Sir Nigel!\" says the master. Finally, a knight has arrived to pick up a suit of armor. He's about twenty-five years old and wears a dark blue garter around his arm! That's just what you've been looking for.">
@@ -98,7 +82,6 @@
 	(STORY TEXT012)
 	(CHOICES CHOICES012)
 	(DESTINATIONS <LTABLE STORY020 STORY033>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT013 "You're walking in a field under the hot sun. Tom, your yeoman-farmer friend, walks up ahead. He steers a wooden plough pulled along by an ox. The plough rips through a long groove called a furrow through the soil.||A basket full of seeds hangs from your neck. You dip your hand in the basket and plant seeds in the furrow as you walk along.||\"Yeoman Tom!\" shouts a man by the edge of the road.||Tom pulls on the ox's reins to make it stop. \"Bah!\" he says. \"Here comes the bailiff. Just when I thought we'd get a good day's work done!\"||\"Who's the bailiff?\" you ask.||\"He's the one who runs the manor for Sir Quentin, the knight who calls himself lord around here.\"||The bailiff looks at you with curiosity as he approaches.||\"So, Tom,\" he says, pointing at you, \"you're doing well enough now to hire a landless laborer!\"||\"And why shouldn't I?\" says Tom. \"No serf am I, anymore. I don't work for Sir Quentin. I'm a free yeoman, I am! I won my freedom fighting for the king at Crecy.\"||\"Yes, I know, Tom. \"We're all very proud of you. But Sir Quentin's fields need ploughing, too, and your family has always done it for him. Take your ox and your new worker and spend the rest of the day there.\" The bailiff turns and walks away.">
@@ -117,7 +100,6 @@
 	(STORY TEXT014)
 	(CHOICES CHOICES014)
 	(DESTINATIONS <LTABLE STORY023 STORY045>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT015 "You're sitting at the edge of the field below the walls of Windsor Castle. Knights come out of big tents topped with colored banners flying in the wind. Squires help the knights mount their horses. Queen Philippa of England and other nobles sit on a raised platform in the shade. Everyone else sits on logs or in the grass.||Trumpets blow. Drummers drum. The first event at King Edward's tournament is about to begin!||King Edward leads a team of nineteen other knights against a team of challengers led by Sir Miles Stapleton. The knights are covered in armor from head to toe. Even their horses wear armor. They form two lines facing each other, thirty yards apart.||The queen stands up and holds a handkerchief in the air.||\"Let the battle begin!\" she cries, and drops the handkerchief. When it hits the ground, the knights spur their horses on.||\"My sword, and St. George!\" they shout as they ride. You can feel the ground tremble as forty horses gallop faster and faster.">
@@ -144,7 +126,6 @@
 	(STORY TEXT019)
 	(CHOICES CHOICES019)
 	(DESTINATIONS <LTABLE STORY027 STORY005>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT020 "You run into Winchester Cathedral, which is being enlarged.||Carpenters and masons are hard at work.||A hand tugs at your sleeve. \"Please, a few coins for a poor beggar?\" A raggedly dressed fellow is standing right behind you.||\"I'm a runaway apprentice. My master hit me, so I came in here for sanctuary. He can't come in here to get me, but that was three years ago! Now I can't leave the cathedral, or he'll brand me.\"||Here's someone else who sought sanctuary in the cathedral! According to medieval law, you're safe inside the cathedral -- but only if you don't go out again. Lucky you don't have to stay. You find a quiet chapel, to jump in time. Where to?||There were lots of knights in the prince's procession, you remember. Why not try to talk with them?">
@@ -227,7 +208,6 @@
 	(STORY TEXT029)
 	(CHOICES CHOICES029)
 	(DESTINATIONS <LTABLE STORY022 STORY026>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT030 "You're being hauled off to the stocks! Across from the cathedral sits a row of big wooden structures, with holes in them. The men carrying you tip the top block of wood up and slip your head and legs through the carved holes set between the two halves.||Thunk! You're locked in! You squirm about, but the wood is tight around your neck and ankles.||All day long people laugh and throw things at you as they walk by. The angrier you get, the more they laugh. What a humiliating way to be punished! You could jump to another time, but according the the rules of Time Travel, you're supposed to avoid disappearing when people can see you, unless it's a matter of life and death. You wait until night falls, when no one is around, before you can leave.">
@@ -316,7 +296,6 @@ can tell you are of noble education by your proud speech.\"||\"My lord,\" says a
 	(STORY TEXT041)
 	(CHOICES CHOICES041)
 	(DESTINATIONS <LTABLE STORY049 STORY051>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT042 "A guard takes you to the castle to await your trial on the charge of being a sorcerer. You enter the castle through a thick oak door. You brush against the cold, damp stone walls of a dark tunnel. A man appears, dressed in black. He holds a flickering torch.|| He takes you down a steep stone staircase. In the dim torchlight you see a row of cells with doors made of iron bars. The man unlocks one of the doors and shoves you inside. He picks up a thick chain attached to a ring in the wall and locks it with a click on your leg.||You're locked in a dungeon!||\"Psst!\" someone whispers. You go to the iron door.||\"What year is it?\" a hoarse voice calls.||\"It's 1344,\" you tell him. \"How long have you been here?\"||\"I don't know!\" the voice wails. \"They've forgotten me. I've forgotten why they put me here!\"||You made a mistake in getting locked up this way, you think, but the answer to the riddle of the motto may still be in this time.||You wait in the damp dungeon cell, trying to think of a way to escape. A knight should be brave, after all, and you should act like one if you want to become one.">
@@ -336,7 +315,6 @@ if you sink.">
 	(STORY TEXT044)
 	(CHOICES CHOICES044)
 	(DESTINATIONS <LTABLE STORY027 STORY005>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT045 "You're standing with yeoman Tom and a group of his friends on the village green. Geese wander about as the men shoot three-foot-long arrows at a target.||\"Here,\" says Tom, \"this bow's just your size. Stand like this, with your elbow pointed at the target. Hold your arrow fast against the string, and pull back.\"||You pull the string with all your strength, but it's very difficult. You worry about the arrow slipping off the string, but you hold on. When you just can't pull any harder, you let it go.||TWING! The arrow wobbles through the air and lands in the base of a tree just missing a goose.||\"Ho ho!\" laughs Tom. \"Already collecting feathers for your arrows, eh?\"||\"Don't just pull with your arms,\" says another man. \"Use your entire body. Like this.\"||TWANG! His arrow lands dead center.||\"Good shot!\" cries another man. \"I'll give a tankard of ale to anyone who can shoot one better!\"">
@@ -429,7 +407,6 @@ prince. He calls to another boy. \"This is Nigel, squire to one of my best knigh
 	(STORY TEXT056)
 	(CHOICES CHOICES056)
 	(DESTINATIONS <LTABLE STORY032 STORY066>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT057 "\"Watch out!\" Alison shouts. She pulls you out of the way, just as a horse races through the crowd. The horse pulls a cart driven by a laughing, drunken man.||\"You'll rot in hell, carter!\" Alison screams at him.||\"Now,\" she says sweetly, \"when you meet the king, you must be polite as a courtier. You must speak to him only when he speaks to you, understand?\"||\"All right,\" you say, as you enter a church full of dancing people. Just below the altar is a large wooden throne.||\"Your majesty,\" Alison says, \"a loyal subject wishes to ask you a question.\"||A nearly toothless one-eyed man sits grinning on the throne. His crown is tilted to one side, and he's hiccuping.||\"Hic! Arise, my loyal subject,\" he says. He takes a big gulp of wine. \"Off with their heads! Off with their shoes!\"||Edward III is tall and blond, like the prince. Who is this, then?">
@@ -449,7 +426,6 @@ yourself?">
 	(STORY TEXT058)
 	(CHOICES CHOICES058)
 	(DESTINATIONS <LTABLE STORY074 STORY082>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT060 "You're standing in the streets of Windsor, late in the year 1346. Light snow lies on the ground, and music fills the air. People are dancing in the streets, spinning round and round with mistletoe and handkerchiefs swinging in their hands.||A big, red-faced woman says to you, \"I've never seen you before, sweets.||\"Why have you come here?\"||\"I'm looking for the king,\" you say.||\"The king!\" the woman grins. She has a gap between her two front teeth. \"Well, now, this is your lucky day! I'm Alison, the fish-wife. I happen to know the king very well, I do! Come along, love, come along! I'll introduce you!\"||Could this woman really know the king? That would be lucky, if it were true. Only the king or prince can make you a knight, and King Edward, if anyone, must know what the motto on the garter means.||What kind of king will she come up with? You're curious and let her pull you along.">
@@ -484,7 +460,6 @@ yourself?">
 	(STORY TEXT064)
 	(CHOICES CHOICES064)
 	(DESTINATIONS <LTABLE STORY038 STORY042>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT065 "You're wet. You're wading in a shallow river, somewhere in Britain in the year A.D. 490. The water is stained red-is it blood?||Something floating in the river bumps into you from behind. It's a body, with a spear stuck through it!||A group of men on horseback crosses the river right next to you. You dive out of the way.||\"Hold!\" shouts a soldier, pointing a spear at your chest. \"Be ye Angle, Saxon, or Briton?\"||\"None,\" you say. \"I'm a ... wanderer.\"||\"A wandering bard?\" He scratches his head. \"There's nothing else ye could be. Come with me. General Artorius will want some entertainment tonight, to celebrate the British victory over the Saxons. You will perform for him. This way!\"">
@@ -555,7 +530,6 @@ yourself?">
 	(STORY TEXT073)
 	(CHOICES CHOICES073)
 	(DESTINATIONS <LTABLE STORY080 STORY060>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT074 "It's August 26, 1346. You're standing at the bottom of a grass-covered hill near the town of Crecy, France. An army of knights, archers, and foot soldiers waits at the top of the hill, while another army approaches across a field.||You can see big banners fluttering in the wind. The banners of the advancing army are blue, with yellow flower designs on them. The banners at the top of the hill are divided in four squares. Two of the squares have the same flower design; the others are red with what looks like golden lions on them.||One of these armies must be Edward and the English, and the other the French. Which should you join?">
@@ -566,7 +540,6 @@ yourself?">
 	(STORY TEXT074)
 	(CHOICES CHOICES074)
 	(DESTINATIONS <LTABLE STORY094 STORY087>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT075 "You're standing near a river by a town of thatched-roof houses. There's a crowd of people coming your way, pulling something over a row of logs with long ropes.||\"Heave!\" shouts a guard, cracking a whip on the backs of the people pulling the ropes. You walk forward to see what it is they're dragging.||It's a ship! A long wooden ship, pointed at both ends.||\"You!\" shouts a man with a spear. \"You're not a Saxon!\" He pulls you over to the ship, and puts you to work pulling with the others. A whip cracks across your back.||\"Heave!\"||Next to you is a man with a tattoo on his cheek.||\"What's going on?\" you ask him.||\"The Saxons are burying one of their kings,\" he mutters as he pulls. \"They put all his weapons and jewels and magic powders in a ship with his body. They've made us dig a big hole, and now were pulling the whole boat there to bury it!\"">
@@ -605,7 +578,6 @@ yourself?">
 	(STORY TEXT079)
 	(CHOICES CHOICES079)
 	(DESTINATIONS <LTABLE STORY068 STORY061>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT080 "You're standing in a small courtyard lined with white marble columns. You've traveled back a thousand years! Its A.D. 340.||You hear voices. Two men come your way, dressed in togas.||Togas! Where are you? This doesn't look like Britain at all. You
@@ -617,7 +589,6 @@ jump through a dark doorway to hide.||You've jumped into a steaming hot pool!||\
 	(STORY TEXT080)
 	(CHOICES CHOICES080)
 	(DESTINATIONS <LTABLE STORY065 STORY075>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT082 "You're standing outside the town of Hennebonne, on the seacoast of Brittany, in northern France. The town is built like a castle, with high walls all around it.||Walking toward the town, you hear a whizzing sound. An arrow hits the ground in front of you! A guard on top of the walls just shot it, as a warning.||\"Where did you come from?\" he shouts. \"What do you want?\"||\"I'm ... from England,\" you shout.||\"England!\" He turns to shout to another guard. \"A messenger from our English allies has arrived. Open the gates!\"||The big iron gate is pulled up a crack, and you squeeze under it. They slam the gate behind you, and draw a bolt across it the size of a tree trunk.||\"This way,\" the guard says. \"Countess Jannedik wants to see you. Hurry! The French army is about to attack us again.\"||He must be taking you to see the Countess of Brittany, you decide. She's the person Sir Walter de Manny was coming to help. You wonder if he's arrived yet.||Men and women run everywhere through the streets and across the walls of the town. You see a woman in full battle-armor riding a big warhorse, directing the preparations for battle.">
@@ -644,7 +615,6 @@ jump through a dark doorway to hide.||You've jumped into a steaming hot pool!||\
 	(STORY TEXT086)
 	(CHOICES CHOICES086)
 	(DESTINATIONS <LTABLE STORY093 STORY087>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT087 "You're walking across a field near Crecy, France, toward an approaching army.||\"You, peasant!\" shouts a knight on horseback.||\"Everyone must help defend France,\" he tells you. \"You're drafted. Help those archers carry their arrows.\"||Now you're part of the French army! Blue banners with gold lilies on them flutter overhead -- the symbol of the French kings. But how will you get to talk to the English king, Edward, if you're part of the enemy army? Only Edward knows what the motto on the garter means.||Well, for now you have no choice but to stick it out. You carry a load of arrows for the crossbowmen. They're paid professional fighters, using a heavy, elaborate sort of mechanical bow which they have to wind up.||\"This is madness,\" one of the archers grumbles. \"We march for eighteen miles, our bowstrings get wet in the rain, the whole army is completely disorganized, and already it is the middle of the afternoon! Do they want us to shoot arrows in the dark? Why don't we stop, and fight tomorrow?\"">
@@ -703,7 +673,6 @@ replaced by rows of bows and arrows. This must be where the archers will fight.|
 	(STORY TEXT096)
 	(CHOICES CHOICES096)
 	(DESTINATIONS <LTABLE STORY113 STORY107>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT097 "You're lying on the back of a wooden cart. You can hear the trumpets and screams of the battle of Crecy in the distance. The cannon is gone, but your friend Tom is right next to you.||\"I should be getting back to my bow now.\" Tom pats you on the shoulder. \"Rest quiet. The doctor will be along soon. He'll empty out some of your bad blood, so you'll soon be ready to fight again.\"||You have to get out of here. The battle of Crecy may still be the right place to find Edward and become a knight, but it was a mistake to join the cannoneers instead of looking for the knights. You're in France ... didn't Lady Joan's friend Sir Walter de Manny come to France to help the Countess of Brittany a couple of years ago?">
@@ -816,7 +785,6 @@ growls. His eyes are fierce beneath his hairy face. \"Two years ago, I swore a s
 	(STORY TEXT112)
 	(CHOICES CHOICES112)
 	(DESTINATIONS <LTABLE STORY115 STORY104>)
-	(TYPES TWO-NONES)
 	(FLAGS LIGHTBIT)>
 
 <CONSTANT TEXT113 "You're standing with Tom by the cannon among a group of English archers. Trumpets sound the call to battle. The archers take their bowstrings out of their helmets, where they keep them dry. They have to pull with all their strength to bend their mighty bows so the strings will fit on them.||\"I hope this works,\" Tom says as you help him roll a round stone into the fat mouth of the cannon. \"It's never been tried in battle before. I'd be much happier with a bow in my hands, but when you're in an army you do what you are told!\" So Tom really was an archer!||Down below, you see the French army approaching. The army is all spread out and disorganized, but it is far larger than the English forces with you on the hill.||\"Look there,\" says Tom with surprise. \"Archers! I thought the French knights didn't believe in archery.\"||\"Those are Italian crossbowmen,\" an archer says. \"They were hired by the French!\"||\"Ready,\" the English archers' commander shouts.">
