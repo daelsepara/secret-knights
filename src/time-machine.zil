@@ -40,10 +40,10 @@
         )>
         <COND (,CONTINUE-TO-CHOICES
             <SET KEY <PROCESS-STORY>>
-            <COND (<EQUAL? .KEY !\h !\H !\?> <DISPLAY-HELP> <PRESS-A-KEY> <SET KEY NONE>)>
-            <COND (<EQUAL? .KEY !\q !\Q> <CRLF> <TELL "Are you sure you want to quit the game?"> <COND(<YES?> <RETURN>)>)>
-            <COND (<EQUAL? .KEY !\s !\S> <CRLF> <TELL "Save current progress?"> <COND (<YES?> <COND (<NOT <SAVE>> <EMPHASIZE "Save failed."> <PRESS-A-KEY>)>)>)>
-            <COND (<EQUAL? .KEY !\r !\R> <CRLF> <TELL "Restore from a previous save?"> <COND (<YES?> <COND (<NOT <RESTORE>> <EMPHASIZE "Restore failed."> <PRESS-A-KEY>)>)>)>
+            <COND (<EQUAL? .KEY !\h !\H !\?> <TELL CR "H/? - HELP" CR> <DISPLAY-HELP> <PRESS-A-KEY> <SET KEY NONE>)>
+            <COND (<EQUAL? .KEY !\q !\Q> <CRLF> <TELL "Q - QUIT" CR CR> <TELL "Are you sure you want to quit the game?"> <COND(<YES?> <RETURN>)>)>
+            <COND (<EQUAL? .KEY !\s !\S> <CRLF> <TELL "S - SAVE" CR CR> <TELL "Save current progress?"> <COND (<YES?> <COND (<NOT <SAVE>> <EMPHASIZE "Save failed."> <PRESS-A-KEY>)>)>)>
+            <COND (<EQUAL? .KEY !\r !\R> <CRLF> <TELL "R - RESTORE" CR CR> <TELL "Restore from a previous save?"> <COND (<YES?> <COND (<NOT <RESTORE>> <EMPHASIZE "Restore failed."> <PRESS-A-KEY>)>)>)>
             <COND (<EQUAL? .KEY !\x !\X> <RETURN>)>
         )>
         <UPDATE-STATUS-LINE>
@@ -69,6 +69,9 @@
             <SET CHOICE <- .KEY !\0>>
             <COND (<AND <G=? <GET .CHOICES 0> 1> <L=? .CHOICE <GET .CHOICES 0>>>
                 <COND (<AND <G=? .CHOICE 1> <L=? .CHOICE <GET .DESTINATIONS 0>>>
+                    <CRLF>
+                    <TELL CR N .CHOICE " - ">
+                    <TELL <GET .CHOICES .CHOICE>>
                     <SETG HERE <GET .DESTINATIONS .CHOICE>>
                     <CRLF>
                     <RETURN>
