@@ -19,7 +19,7 @@
     <TELL MISSION-TEXT>
     <CRLF>
     <EMPHASIZE EQUIPMENT-HEADER>
-    <CRLF>    
+    <CRLF>
     <TELL EQUIPMENT-TEXT>
     <CRLF>
     <REPEAT ()

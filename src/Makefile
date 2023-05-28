@@ -7,6 +7,6 @@ all: clean
 test: clean
 	zilf -w knights.zil
 	zapf knights.zap
-	
+
 clean:
 	rm -f *.xzap *.zap *.z?

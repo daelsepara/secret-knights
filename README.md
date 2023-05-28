@@ -8,7 +8,7 @@ This is a ZIL Implementation of **Secret of the Knights** game book (Time Machin
 | |ARE YOU READY TO FACE THE DANGER?|
 | |*Cover painting by Richard Hescox|
 
-## Additional Copyright Information 
+## Additional Copyright Information
 
 ```
 SECRET OF THE KNIGHTS
@@ -42,7 +42,7 @@ ISBN 0-553-23601-6
 - Press **f** or **F** to view Data File (hints)
 - Press **r** or **R** to restore progress from a save file
 - Press **s** or **S** to save current progress to a file
-- Press **h** or **H** or **?** lists the commands **A**/**D**/**F**/**S**/**R**/**Q** and what each does 
+- Press **h** or **H** or **?** lists the commands **A**/**D**/**F**/**S**/**R**/**Q** and what each does
 
 ## Bugs
 
